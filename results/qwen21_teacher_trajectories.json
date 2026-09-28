@@ -1,0 +1,423 @@
+{
+  "tag": "fixed_p1",
+  "base_url": "http://127.0.0.1:8188",
+  "size": 512,
+  "teacher": "Qwen-Image-2.1 + Viggle v0.2.1 r128 six-step",
+  "objective_contract": {
+    "state_before_final": "teacher Euler state at the shifted raw sigma 0.25 node",
+    "final": "teacher denoised latent at sigma 0",
+    "student_schedule": "shifted raw sigmas [1.0, 0.25, 0.0]",
+    "loss": "MSE on the first student Euler state plus MSE on the final denoised latent"
+  },
+  "total_elapsed_seconds": 22.942647899966687,
+  "records": [
+    {
+      "index": 0,
+      "sample_id": "fixed_p1_000_seed42",
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "seed": 42,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "4dd233a2-a34f-41b1-ad3c-3a6fe9700046",
+      "elapsed_seconds": 7.0485018999897875,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_000_seed42.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_000_seed42.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_000_seed42.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_000_seed42_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_000_seed42_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_000_seed42_00001_.safetensors"
+    },
+    {
+      "index": 1,
+      "sample_id": "fixed_p1_001_seed43",
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "seed": 43,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "b307fad5-5131-4a98-9c5a-425f54476764",
+      "elapsed_seconds": 2.288711200002581,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_001_seed43.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_001_seed43.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_001_seed43.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_001_seed43_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_001_seed43_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_001_seed43_00001_.safetensors"
+    },
+    {
+      "index": 2,
+      "sample_id": "fixed_p1_002_seed44",
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "seed": 44,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "ba2efe10-6cc6-4f21-b9f3-87527ed637db",
+      "elapsed_seconds": 2.2976078999927267,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_002_seed44.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_002_seed44.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_002_seed44.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_002_seed44_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_002_seed44_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_002_seed44_00001_.safetensors"
+    },
+    {
+      "index": 3,
+      "sample_id": "fixed_p1_003_seed45",
+      "prompt": "A chef plating handmade noodles in a warm modern kitchen, candid documentary photograph",
+      "seed": 45,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "69f9697c-ebf3-4a04-b7b9-0f29939e5507",
+      "elapsed_seconds": 2.1892015000339597,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_003_seed45.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_003_seed45.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_003_seed45.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_003_seed45_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_003_seed45_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_003_seed45_00001_.safetensors"
+    },
+    {
+      "index": 4,
+      "sample_id": "fixed_p1_004_seed46",
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "seed": 46,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "7288cf33-355c-40c9-b6b9-51b9f9b8a34a",
+      "elapsed_seconds": 2.3003955999738537,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_004_seed46.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_004_seed46.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_004_seed46.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_004_seed46_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_004_seed46_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_004_seed46_00001_.safetensors"
+    },
+    {
+      "index": 5,
+      "sample_id": "fixed_p1_005_seed47",
+      "prompt": "A rain-covered neon street in a dense Asian city at night, cinematic photography, reflections",
+      "seed": 47,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "a5e4089e-8ba4-43ce-b708-11953448b6a2",
+      "elapsed_seconds": 2.28747670003213,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_005_seed47.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_005_seed47.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_005_seed47.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_005_seed47_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_005_seed47_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_005_seed47_00001_.safetensors"
+    },
+    {
+      "index": 6,
+      "sample_id": "fixed_p1_006_seed48",
+      "prompt": "A studio portrait of an elderly fisherman mending a net, warm rim light, 85mm, natural skin texture",
+      "seed": 48,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "24d0728a-5494-4c1c-8524-e0a63b1dade8",
+      "elapsed_seconds": 2.3068992999615148,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_006_seed48.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_006_seed48.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_006_seed48.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_006_seed48_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_006_seed48_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_006_seed48_00001_.safetensors"
+    },
+    {
+      "index": 7,
+      "sample_id": "fixed_p1_007_seed49",
+      "prompt": "A minimalist poster reading CREATE MORE, bold geometric typography, cream and black, gallery quality",
+      "seed": 49,
+      "width": 512,
+      "height": 512,
+      "prompt_id": "7cf90be1-1db6-4881-80ac-48dce154cda9",
+      "elapsed_seconds": 2.213463700027205,
+      "teacher_raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "teacher_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "capture_sigmas": [
+        1.0,
+        0.9625565087555531,
+        0.9230565544529384,
+        0.8371702074278128,
+        0.6315122047992724,
+        0.3635699938957204,
+        0.0
+      ],
+      "two_step_raw_sigmas": [
+        1.0,
+        0.25
+      ],
+      "two_step_sigmas": [
+        1.0,
+        0.3635699938957204,
+        0.0
+      ],
+      "state_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_007_seed49.state.latent",
+      "final_latent": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_007_seed49.final.latent",
+      "conditioning": "D:\\Project\\1secimage\\out\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_007_seed49.conditioning.safetensors",
+      "source_state_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_007_seed49_state_00001_.latent",
+      "source_final_latent": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_007_seed49_final_00001_.latent",
+      "source_conditioning": "D:\\Project\\1secimage\\out\\comfy\\research\\teacher_trajectories\\fixed_p1\\fixed_p1_007_seed49_00001_.safetensors"
+    }
+  ]
+}

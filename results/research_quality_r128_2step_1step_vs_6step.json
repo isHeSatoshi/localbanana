@@ -1,0 +1,34 @@
+{
+  "reference": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r128_6_512_000\\quality_v021_p1_r128_6_512_000_00001_.png",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "clip_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dino_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--facebook--dinov2-base\\snapshots\\f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "candidates": [
+    {
+      "label": "research_quality_r128_2step_fixed_512_000",
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\research_quality_r128_2step_fixed_512_000\\research_quality_r128_2step_fixed_512_000_00001_.png",
+      "pixel_mae_rgb": 0.0292208194732666,
+      "pixel_rmse_rgb": 0.06646420806646347,
+      "pixel_max_abs_rgb": 0.9725490212440491,
+      "neighbor_gradient_mean": 0.0007926267571747303,
+      "laplacian_mean_abs": 0.008265701122581959,
+      "clip_prompt_alignment": 0.28794240951538086,
+      "clip_image_cosine_vs_reference": 0.8503707647323608,
+      "dino_image_cosine_vs_reference": 0.6050559282302856,
+      "dino_l2_vs_reference": 0.888756513595581
+    },
+    {
+      "label": "research_quality_r128_1step_fixed_512_000",
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\research_quality_r128_1step_fixed_512_000\\research_quality_r128_1step_fixed_512_000_00001_.png",
+      "pixel_mae_rgb": 0.03179127350449562,
+      "pixel_rmse_rgb": 0.06874235719442368,
+      "pixel_max_abs_rgb": 0.9843137264251709,
+      "neighbor_gradient_mean": 0.0006322848494164646,
+      "laplacian_mean_abs": 0.005361167248338461,
+      "clip_prompt_alignment": 0.2438296526670456,
+      "clip_image_cosine_vs_reference": 0.7316931486129761,
+      "dino_image_cosine_vs_reference": 0.43974369764328003,
+      "dino_l2_vs_reference": 1.0585428476333618
+    }
+  ]
+}

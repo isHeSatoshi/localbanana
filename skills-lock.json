@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "skills": {
+    "inference-engineering": {
+      "source": "skillbay.sh",
+      "sourceUrl": "https://skillbay.sh",
+      "sourceType": "well-known",
+      "computedHash": "fe38511ac1488849ef9a9760fb72f92251fb22b6f87a63662136cb4230623a49",
+      "wellKnownDigest": "sha256:8174c5df476400b56dc04b6f4ba48fd7cab8e4fa180cc48aee2915ae32146f38"
+    }
+  }
+}

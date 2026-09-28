@@ -1,0 +1,21 @@
+{
+  "reference": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r256_6_512_000\\quality_v021_p1_r256_6_512_000_00001_.png",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition Variation marker 1.",
+  "clip_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dino_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--facebook--dinov2-base\\snapshots\\f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "candidates": [
+    {
+      "label": "regress_six_step_512",
+      "image": "D:\\Project\\1secimage\\out\\research\\student_eval\\regress_six_step_512\\regress_six_step_512_001_seed42_00001_.png",
+      "pixel_mae_rgb": 0.0617787130177021,
+      "pixel_rmse_rgb": 0.1088007465004921,
+      "pixel_max_abs_rgb": 0.9058823585510254,
+      "neighbor_gradient_mean": 0.0026213228702545166,
+      "laplacian_mean_abs": 0.014994348399341106,
+      "clip_prompt_alignment": 0.3157216012477875,
+      "clip_image_cosine_vs_reference": 0.9111616015434265,
+      "dino_image_cosine_vs_reference": 0.870526909828186,
+      "dino_l2_vs_reference": 0.5088675022125244
+    }
+  ]
+}

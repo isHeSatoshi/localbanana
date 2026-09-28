@@ -1,0 +1,280 @@
+{
+  "tag": "p3b_floor",
+  "mode": "latency",
+  "size": 512,
+  "seed": 101,
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "vary_prompt": true,
+  "grids": [
+    {
+      "label": "n1",
+      "raw_sigmas": [
+        1.0
+      ],
+      "steps": 1,
+      "median_elapsed_seconds": 1.1176955000000817,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "TextEncodeQwenImage21": 0.4616732597351074,
+        "BasicGuider": 0.0004999637603759766,
+        "SamplerCustomAdvanced": 0.3550107479095459,
+        "VAEDecode": 0.27653956413269043,
+        "SaveImage": 0.01999950408935547
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n1_512_001\\p3b_floor_n1_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n1_512_002\\p3b_floor_n1_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n1_512_003\\p3b_floor_n1_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n1_512_004\\p3b_floor_n1_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n1_512_005\\p3b_floor_n1_512_005_00001_.png"
+      ],
+      "cached_runs": [],
+      "latency_valid": true,
+      "sampler_step_intervals": [
+        {
+          "step": 0,
+          "seconds_since_previous_event": 0.0
+        },
+        {
+          "step": 1,
+          "seconds_since_previous_event": 0.3250584602355957
+        }
+      ]
+    },
+    {
+      "label": "n2",
+      "raw_sigmas": [
+        1.0,
+        0.78
+      ],
+      "steps": 2,
+      "median_elapsed_seconds": 1.274612100000013,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "TextEncodeQwenImage21": 0.4686317443847656,
+        "BasicGuider": 0.0004990100860595703,
+        "SamplerCustomAdvanced": 0.5014758110046387,
+        "VAEDecode": 0.2734982967376709,
+        "SaveImage": 0.021002531051635742
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n2_512_001\\p3b_floor_n2_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n2_512_002\\p3b_floor_n2_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n2_512_003\\p3b_floor_n2_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n2_512_004\\p3b_floor_n2_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n2_512_005\\p3b_floor_n2_512_005_00001_.png"
+      ],
+      "cached_runs": [],
+      "latency_valid": true,
+      "sampler_step_intervals": [
+        {
+          "step": 0,
+          "seconds_since_previous_event": 0.0
+        },
+        {
+          "step": 1,
+          "seconds_since_previous_event": 0.323030948638916
+        },
+        {
+          "step": 2,
+          "seconds_since_previous_event": 0.07650208473205566
+        }
+      ]
+    },
+    {
+      "label": "n3",
+      "raw_sigmas": [
+        1.0,
+        0.75,
+        0.25
+      ],
+      "steps": 3,
+      "median_elapsed_seconds": 1.44598649999989,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "TextEncodeQwenImage21": 0.4920687675476074,
+        "BasicGuider": 0.0005002021789550781,
+        "SamplerCustomAdvanced": 0.670567512512207,
+        "VAEDecode": 0.27249836921691895,
+        "SaveImage": 0.024000883102416992
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n3_512_001\\p3b_floor_n3_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n3_512_002\\p3b_floor_n3_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n3_512_003\\p3b_floor_n3_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n3_512_004\\p3b_floor_n3_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n3_512_005\\p3b_floor_n3_512_005_00001_.png"
+      ],
+      "cached_runs": [],
+      "latency_valid": true,
+      "sampler_step_intervals": [
+        {
+          "step": 0,
+          "seconds_since_previous_event": 0.0
+        },
+        {
+          "step": 1,
+          "seconds_since_previous_event": 0.34281492233276367
+        },
+        {
+          "step": 3,
+          "seconds_since_previous_event": 0.20252585411071777
+        }
+      ]
+    },
+    {
+      "label": "n4",
+      "raw_sigmas": [
+        1.0,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "steps": 4,
+      "median_elapsed_seconds": 1.5963397999994413,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "TextEncodeQwenImage21": 0.49311065673828125,
+        "BasicGuider": 0.0005004405975341797,
+        "SamplerCustomAdvanced": 0.8001031875610352,
+        "VAEDecode": 0.2735147476196289,
+        "SaveImage": 0.02349686622619629
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n4_512_001\\p3b_floor_n4_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n4_512_002\\p3b_floor_n4_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n4_512_003\\p3b_floor_n4_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n4_512_004\\p3b_floor_n4_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n4_512_005\\p3b_floor_n4_512_005_00001_.png"
+      ],
+      "cached_runs": [],
+      "latency_valid": true,
+      "sampler_step_intervals": [
+        {
+          "step": 0,
+          "seconds_since_previous_event": 0.0
+        },
+        {
+          "step": 1,
+          "seconds_since_previous_event": 0.423983097076416
+        },
+        {
+          "step": 3,
+          "seconds_since_previous_event": 0.20100021362304688
+        },
+        {
+          "step": 4,
+          "seconds_since_previous_event": 0.13000869750976562
+        }
+      ]
+    },
+    {
+      "label": "n5",
+      "raw_sigmas": [
+        1.0,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "steps": 5,
+      "median_elapsed_seconds": 1.7719063000004098,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "TextEncodeQwenImage21": 0.5090460777282715,
+        "BasicGuider": 0.0004999637603759766,
+        "SamplerCustomAdvanced": 0.9560573101043701,
+        "VAEDecode": 0.2729988098144531,
+        "SaveImage": 0.024500131607055664
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n5_512_001\\p3b_floor_n5_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n5_512_002\\p3b_floor_n5_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n5_512_003\\p3b_floor_n5_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n5_512_004\\p3b_floor_n5_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n5_512_005\\p3b_floor_n5_512_005_00001_.png"
+      ],
+      "cached_runs": [],
+      "latency_valid": true,
+      "sampler_step_intervals": [
+        {
+          "step": 0,
+          "seconds_since_previous_event": 0.0
+        },
+        {
+          "step": 1,
+          "seconds_since_previous_event": 0.33753466606140137
+        },
+        {
+          "step": 3,
+          "seconds_since_previous_event": 0.20581841468811035
+        },
+        {
+          "step": 4,
+          "seconds_since_previous_event": 0.1330127716064453
+        },
+        {
+          "step": 5,
+          "seconds_since_previous_event": 0.14000201225280762
+        }
+      ]
+    },
+    {
+      "label": "n6",
+      "raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "steps": 6,
+      "median_elapsed_seconds": 1.8404530999996496,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "TextEncodeQwenImage21": 0.4735581874847412,
+        "BasicGuider": 0.0004999637603759766,
+        "SamplerCustomAdvanced": 1.0600638389587402,
+        "VAEDecode": 0.2720355987548828,
+        "SaveImage": 0.024000167846679688
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n6_512_001\\p3b_floor_n6_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n6_512_002\\p3b_floor_n6_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n6_512_003\\p3b_floor_n6_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n6_512_004\\p3b_floor_n6_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3b_floor_n6_512_005\\p3b_floor_n6_512_005_00001_.png"
+      ],
+      "cached_runs": [],
+      "latency_valid": true,
+      "sampler_step_intervals": [
+        {
+          "step": 0,
+          "seconds_since_previous_event": 0.0
+        },
+        {
+          "step": 1,
+          "seconds_since_previous_event": 0.33600378036499023
+        },
+        {
+          "step": 3,
+          "seconds_since_previous_event": 0.19451642036437988
+        },
+        {
+          "step": 4,
+          "seconds_since_previous_event": 0.13700008392333984
+        },
+        {
+          "step": 5,
+          "seconds_since_previous_event": 0.14501118659973145
+        },
+        {
+          "step": 6,
+          "seconds_since_previous_event": 0.14102745056152344
+        }
+      ]
+    }
+  ],
+  "total_elapsed_seconds": 58.30080650000036
+}

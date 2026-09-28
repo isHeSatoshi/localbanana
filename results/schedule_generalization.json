@@ -1,0 +1,522 @@
+{
+  "tag": "schedgen",
+  "size": 512,
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "prompts": [
+    "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+    "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+    "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+    "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections"
+  ],
+  "summary": {
+    "betas": [
+      0.25,
+      0.5,
+      0.65,
+      0.75,
+      0.78,
+      0.85
+    ],
+    "n_prompts": 4,
+    "n_seeds": 3,
+    "mean_dino_cosine": {
+      "0.25": 0.44457679490248364,
+      "0.5": 0.5424931397040685,
+      "0.65": 0.5663146786391735,
+      "0.75": 0.6078387958308061,
+      "0.78": 0.6291658766567707,
+      "0.85": 0.6455913422008356
+    },
+    "min_dino_cosine": {
+      "0.25": 0.17196081578731537,
+      "0.5": 0.15247312188148499,
+      "0.65": 0.2039242386817932,
+      "0.75": 0.2075580209493637,
+      "0.78": 0.23609837889671326,
+      "0.85": 0.144499734044075
+    },
+    "mean_clip_cosine": {
+      "0.25": 0.790430337190628,
+      "0.5": 0.7940607269605001,
+      "0.65": 0.7983923653761545,
+      "0.75": 0.8154228727022806,
+      "0.78": 0.818295826514562,
+      "0.85": 0.8203229059775671
+    }
+  },
+  "combos": [
+    {
+      "key": "p0_s101",
+      "prompt_index": 0,
+      "seed": 101,
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p0_s101_ref6_512_000\\schedgen_p0_s101_ref6_512_000_00003_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.5515797138214111,
+          "clip_cosine": 0.8549154996871948,
+          "pixel_mae": 0.029973512515425682
+        },
+        "0.5": {
+          "dino_cosine": 0.6050559282302856,
+          "clip_cosine": 0.8503710627555847,
+          "pixel_mae": 0.0292208194732666
+        },
+        "0.65": {
+          "dino_cosine": 0.7834267020225525,
+          "clip_cosine": 0.8567252159118652,
+          "pixel_mae": 0.026227764785289764
+        },
+        "0.75": {
+          "dino_cosine": 0.8120108842849731,
+          "clip_cosine": 0.8878865242004395,
+          "pixel_mae": 0.024008072912693024
+        },
+        "0.78": {
+          "dino_cosine": 0.8466848731040955,
+          "clip_cosine": 0.9085546135902405,
+          "pixel_mae": 0.024102218449115753
+        },
+        "0.85": {
+          "dino_cosine": 0.7912153601646423,
+          "clip_cosine": 0.8987265229225159,
+          "pixel_mae": 0.01949176751077175
+        }
+      }
+    },
+    {
+      "key": "p0_s202",
+      "prompt_index": 0,
+      "seed": 202,
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p0_s202_ref6_512_000\\schedgen_p0_s202_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.6420751810073853,
+          "clip_cosine": 0.8683488965034485,
+          "pixel_mae": 0.054824188351631165
+        },
+        "0.5": {
+          "dino_cosine": 0.7137141227722168,
+          "clip_cosine": 0.8463090658187866,
+          "pixel_mae": 0.052944671362638474
+        },
+        "0.65": {
+          "dino_cosine": 0.8082494139671326,
+          "clip_cosine": 0.8443500399589539,
+          "pixel_mae": 0.051118116825819016
+        },
+        "0.75": {
+          "dino_cosine": 0.7999433875083923,
+          "clip_cosine": 0.8535553216934204,
+          "pixel_mae": 0.04733654484152794
+        },
+        "0.78": {
+          "dino_cosine": 0.8152094483375549,
+          "clip_cosine": 0.837570309638977,
+          "pixel_mae": 0.04574044421315193
+        },
+        "0.85": {
+          "dino_cosine": 0.8513319492340088,
+          "clip_cosine": 0.8950273990631104,
+          "pixel_mae": 0.03687701001763344
+        }
+      }
+    },
+    {
+      "key": "p0_s303",
+      "prompt_index": 0,
+      "seed": 303,
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p0_s303_ref6_512_000\\schedgen_p0_s303_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.5856179594993591,
+          "clip_cosine": 0.8979970812797546,
+          "pixel_mae": 0.04708858206868172
+        },
+        "0.5": {
+          "dino_cosine": 0.7652029395103455,
+          "clip_cosine": 0.8623062968254089,
+          "pixel_mae": 0.04356643185019493
+        },
+        "0.65": {
+          "dino_cosine": 0.7980150580406189,
+          "clip_cosine": 0.9046270847320557,
+          "pixel_mae": 0.03882969915866852
+        },
+        "0.75": {
+          "dino_cosine": 0.882371187210083,
+          "clip_cosine": 0.9405478239059448,
+          "pixel_mae": 0.03085373155772686
+        },
+        "0.78": {
+          "dino_cosine": 0.8870270252227783,
+          "clip_cosine": 0.9419389367103577,
+          "pixel_mae": 0.027277832850813866
+        },
+        "0.85": {
+          "dino_cosine": 0.8972629308700562,
+          "clip_cosine": 0.957192063331604,
+          "pixel_mae": 0.01953180879354477
+        }
+      }
+    },
+    {
+      "key": "p1_s101",
+      "prompt_index": 1,
+      "seed": 101,
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p1_s101_ref6_512_000\\schedgen_p1_s101_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.8198708295822144,
+          "clip_cosine": 0.9178081154823303,
+          "pixel_mae": 0.12983675301074982
+        },
+        "0.5": {
+          "dino_cosine": 0.8661160469055176,
+          "clip_cosine": 0.9356487989425659,
+          "pixel_mae": 0.12296945601701736
+        },
+        "0.65": {
+          "dino_cosine": 0.8136307001113892,
+          "clip_cosine": 0.9218793511390686,
+          "pixel_mae": 0.12194240093231201
+        },
+        "0.75": {
+          "dino_cosine": 0.7821404337882996,
+          "clip_cosine": 0.9014982581138611,
+          "pixel_mae": 0.1269848495721817
+        },
+        "0.78": {
+          "dino_cosine": 0.783505380153656,
+          "clip_cosine": 0.8968906402587891,
+          "pixel_mae": 0.13016875088214874
+        },
+        "0.85": {
+          "dino_cosine": 0.8017547726631165,
+          "clip_cosine": 0.9050503373146057,
+          "pixel_mae": 0.13323523104190826
+        }
+      }
+    },
+    {
+      "key": "p1_s202",
+      "prompt_index": 1,
+      "seed": 202,
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p1_s202_ref6_512_000\\schedgen_p1_s202_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.6953119039535522,
+          "clip_cosine": 0.8431538939476013,
+          "pixel_mae": 0.11522748321294785
+        },
+        "0.5": {
+          "dino_cosine": 0.8147863149642944,
+          "clip_cosine": 0.905784010887146,
+          "pixel_mae": 0.10795942693948746
+        },
+        "0.65": {
+          "dino_cosine": 0.8165846467018127,
+          "clip_cosine": 0.9325324892997742,
+          "pixel_mae": 0.10389238595962524
+        },
+        "0.75": {
+          "dino_cosine": 0.8164393901824951,
+          "clip_cosine": 0.9187101721763611,
+          "pixel_mae": 0.10010182857513428
+        },
+        "0.78": {
+          "dino_cosine": 0.7983734607696533,
+          "clip_cosine": 0.9175455570220947,
+          "pixel_mae": 0.09906742721796036
+        },
+        "0.85": {
+          "dino_cosine": 0.8019551634788513,
+          "clip_cosine": 0.9067922234535217,
+          "pixel_mae": 0.09254280477762222
+        }
+      }
+    },
+    {
+      "key": "p1_s303",
+      "prompt_index": 1,
+      "seed": 303,
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p1_s303_ref6_512_000\\schedgen_p1_s303_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.6967319846153259,
+          "clip_cosine": 0.8613775968551636,
+          "pixel_mae": 0.14212648570537567
+        },
+        "0.5": {
+          "dino_cosine": 0.7973031997680664,
+          "clip_cosine": 0.8959473967552185,
+          "pixel_mae": 0.1279311329126358
+        },
+        "0.65": {
+          "dino_cosine": 0.7624065279960632,
+          "clip_cosine": 0.8939909934997559,
+          "pixel_mae": 0.1125868558883667
+        },
+        "0.75": {
+          "dino_cosine": 0.8420830965042114,
+          "clip_cosine": 0.9009420871734619,
+          "pixel_mae": 0.09782421588897705
+        },
+        "0.78": {
+          "dino_cosine": 0.8236990571022034,
+          "clip_cosine": 0.8975775241851807,
+          "pixel_mae": 0.09389492124319077
+        },
+        "0.85": {
+          "dino_cosine": 0.8360616564750671,
+          "clip_cosine": 0.8899276256561279,
+          "pixel_mae": 0.08533501625061035
+        }
+      }
+    },
+    {
+      "key": "p2_s101",
+      "prompt_index": 2,
+      "seed": 101,
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p2_s101_ref6_512_000\\schedgen_p2_s101_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.2325916588306427,
+          "clip_cosine": 0.7999964356422424,
+          "pixel_mae": 0.07265122979879379
+        },
+        "0.5": {
+          "dino_cosine": 0.3353792130947113,
+          "clip_cosine": 0.8277879357337952,
+          "pixel_mae": 0.06909365206956863
+        },
+        "0.65": {
+          "dino_cosine": 0.3654719293117523,
+          "clip_cosine": 0.8065008521080017,
+          "pixel_mae": 0.06749751418828964
+        },
+        "0.75": {
+          "dino_cosine": 0.4417135715484619,
+          "clip_cosine": 0.8372042179107666,
+          "pixel_mae": 0.060090985149145126
+        },
+        "0.78": {
+          "dino_cosine": 0.4595268964767456,
+          "clip_cosine": 0.8307878971099854,
+          "pixel_mae": 0.05831245705485344
+        },
+        "0.85": {
+          "dino_cosine": 0.4179854393005371,
+          "clip_cosine": 0.8267121911048889,
+          "pixel_mae": 0.05055282637476921
+        }
+      }
+    },
+    {
+      "key": "p2_s202",
+      "prompt_index": 2,
+      "seed": 202,
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p2_s202_ref6_512_000\\schedgen_p2_s202_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.17196081578731537,
+          "clip_cosine": 0.762876033782959,
+          "pixel_mae": 0.09870827198028564
+        },
+        "0.5": {
+          "dino_cosine": 0.259891152381897,
+          "clip_cosine": 0.7327667474746704,
+          "pixel_mae": 0.09371164441108704
+        },
+        "0.65": {
+          "dino_cosine": 0.30062904953956604,
+          "clip_cosine": 0.7682572603225708,
+          "pixel_mae": 0.08832049369812012
+        },
+        "0.75": {
+          "dino_cosine": 0.40832430124282837,
+          "clip_cosine": 0.8110424280166626,
+          "pixel_mae": 0.0784464180469513
+        },
+        "0.78": {
+          "dino_cosine": 0.4366047978401184,
+          "clip_cosine": 0.8113788366317749,
+          "pixel_mae": 0.07282966375350952
+        },
+        "0.85": {
+          "dino_cosine": 0.40804392099380493,
+          "clip_cosine": 0.8027647137641907,
+          "pixel_mae": 0.057906609028577805
+        }
+      }
+    },
+    {
+      "key": "p2_s303",
+      "prompt_index": 2,
+      "seed": 303,
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p2_s303_ref6_512_000\\schedgen_p2_s303_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.17256933450698853,
+          "clip_cosine": 0.7169811129570007,
+          "pixel_mae": 0.10195193439722061
+        },
+        "0.5": {
+          "dino_cosine": 0.5049003958702087,
+          "clip_cosine": 0.7985217571258545,
+          "pixel_mae": 0.0933145061135292
+        },
+        "0.65": {
+          "dino_cosine": 0.6458193063735962,
+          "clip_cosine": 0.8208416104316711,
+          "pixel_mae": 0.08407959342002869
+        },
+        "0.75": {
+          "dino_cosine": 0.7789361476898193,
+          "clip_cosine": 0.8376666903495789,
+          "pixel_mae": 0.07425666600465775
+        },
+        "0.78": {
+          "dino_cosine": 0.7544921040534973,
+          "clip_cosine": 0.841388463973999,
+          "pixel_mae": 0.06825807690620422
+        },
+        "0.85": {
+          "dino_cosine": 0.7713281512260437,
+          "clip_cosine": 0.8509216904640198,
+          "pixel_mae": 0.05400068685412407
+        }
+      }
+    },
+    {
+      "key": "p3_s101",
+      "prompt_index": 3,
+      "seed": 101,
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p3_s101_ref6_512_000\\schedgen_p3_s101_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.31314516067504883,
+          "clip_cosine": 0.6298038363456726,
+          "pixel_mae": 0.131003275513649
+        },
+        "0.5": {
+          "dino_cosine": 0.15247312188148499,
+          "clip_cosine": 0.5779748558998108,
+          "pixel_mae": 0.1367386281490326
+        },
+        "0.65": {
+          "dino_cosine": 0.21470020711421967,
+          "clip_cosine": 0.5681527853012085,
+          "pixel_mae": 0.1338382214307785
+        },
+        "0.75": {
+          "dino_cosine": 0.23476150631904602,
+          "clip_cosine": 0.5557177662849426,
+          "pixel_mae": 0.12819969654083252
+        },
+        "0.78": {
+          "dino_cosine": 0.23609837889671326,
+          "clip_cosine": 0.5561973452568054,
+          "pixel_mae": 0.12521354854106903
+        },
+        "0.85": {
+          "dino_cosine": 0.3899466097354889,
+          "clip_cosine": 0.5577921867370605,
+          "pixel_mae": 0.11684110015630722
+        }
+      }
+    },
+    {
+      "key": "p3_s202",
+      "prompt_index": 3,
+      "seed": 202,
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p3_s202_ref6_512_000\\schedgen_p3_s202_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.24948188662528992,
+          "clip_cosine": 0.687157392501831,
+          "pixel_mae": 0.09694021940231323
+        },
+        "0.5": {
+          "dino_cosine": 0.5270102620124817,
+          "clip_cosine": 0.6709999442100525,
+          "pixel_mae": 0.0985109731554985
+        },
+        "0.65": {
+          "dino_cosine": 0.28291836380958557,
+          "clip_cosine": 0.6341921091079712,
+          "pixel_mae": 0.09354245662689209
+        },
+        "0.75": {
+          "dino_cosine": 0.2075580209493637,
+          "clip_cosine": 0.6025382876396179,
+          "pixel_mae": 0.09045904874801636
+        },
+        "0.78": {
+          "dino_cosine": 0.23631294071674347,
+          "clip_cosine": 0.6053674221038818,
+          "pixel_mae": 0.08934414386749268
+        },
+        "0.85": {
+          "dino_cosine": 0.144499734044075,
+          "clip_cosine": 0.6061620116233826,
+          "pixel_mae": 0.09058782458305359
+        }
+      }
+    },
+    {
+      "key": "p3_s303",
+      "prompt_index": 3,
+      "seed": 303,
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedgen_p3_s303_ref6_512_000\\schedgen_p3_s303_ref6_512_000_00001_.png",
+      "results": {
+        "0.25": {
+          "dino_cosine": 0.20398510992527008,
+          "clip_cosine": 0.6447481513023376,
+          "pixel_mae": 0.11675705760717392
+        },
+        "0.5": {
+          "dino_cosine": 0.168084979057312,
+          "clip_cosine": 0.6243108510971069,
+          "pixel_mae": 0.1161511167883873
+        },
+        "0.65": {
+          "dino_cosine": 0.2039242386817932,
+          "clip_cosine": 0.6286585927009583,
+          "pixel_mae": 0.11308231204748154
+        },
+        "0.75": {
+          "dino_cosine": 0.2877836227416992,
+          "clip_cosine": 0.7377648949623108,
+          "pixel_mae": 0.10503429174423218
+        },
+        "0.78": {
+          "dino_cosine": 0.472456157207489,
+          "clip_cosine": 0.7743523716926575,
+          "pixel_mae": 0.10076981782913208
+        },
+        "0.85": {
+          "dino_cosine": 0.6357104182243347,
+          "clip_cosine": 0.7468059062957764,
+          "pixel_mae": 0.08943315595388412
+        }
+      }
+    }
+  ],
+  "total_elapsed_seconds": 223.07447469999988
+}

@@ -1,0 +1,42 @@
+{
+  "prompt": "A blue glass sphere in a studio",
+  "seed": 42,
+  "base_path": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306537_44c313e6_00001_.png",
+  "base_status": "Completed 1024px in 34.409 s API time. ComfyUI execution time: 31.924 s. Prompt ID: 565fdc16-3800-47e5-96ce-1a9109ea8e39",
+  "base_details": {
+    "profile": "Base reference (40-step no Turbo)",
+    "resolution": 1024,
+    "seed": 42,
+    "prompt_id": "565fdc16-3800-47e5-96ce-1a9109ea8e39",
+    "api_poll_seconds": 34.408755,
+    "execution_seconds": 31.924,
+    "output_file": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306537_44c313e6_00001_.png",
+    "output_metadata": "{\n  \"filename\": \"1024_1790306537_44c313e6_00001_.png\",\n  \"subfolder\": \"dashboard\",\n  \"type\": \"output\"\n}",
+    "model": "qwen_image_2.1_int8_convrot.safetensors",
+    "text_encoder": "qwen3vl_8b_int8_convrot.safetensors",
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "lora": null,
+    "cache": "GPU / default (lossless cache storage)",
+    "cfg": 1.0,
+    "note": "Base reference uses the same INT8 weights, GPU cache, and CFG-1 conditioning, but removes Turbo and uses the ordinary 40-step KSampler path."
+  },
+  "turbo_path": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306572_013051db_00001_.png",
+  "turbo_status": "Completed 1024px in 14.054 s API time. ComfyUI execution time: 7.331 s. Prompt ID: 403eab9c-412f-4805-ba62-87ca85ad0bc0",
+  "turbo_details": {
+    "profile": "Accepted fast (4-step Turbo)",
+    "resolution": 1024,
+    "seed": 42,
+    "prompt_id": "403eab9c-412f-4805-ba62-87ca85ad0bc0",
+    "api_poll_seconds": 14.053931,
+    "execution_seconds": 7.331,
+    "output_file": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306572_013051db_00001_.png",
+    "output_metadata": "{\n  \"filename\": \"1024_1790306572_013051db_00001_.png\",\n  \"subfolder\": \"dashboard\",\n  \"type\": \"output\"\n}",
+    "model": "qwen_image_2.1_int8_convrot.safetensors",
+    "text_encoder": "qwen3vl_8b_int8_convrot.safetensors",
+    "vae": "qwen_image_2.1_vae_bf16.safetensors",
+    "lora": "Qwen-Image-2.1-viggle-turbo-4step-r64-comfyui-T8.safetensors",
+    "cache": "GPU / default (lossless cache storage)",
+    "cfg": 1.0,
+    "note": "No CFG > 1 path is exposed because the accepted path uses BasicGuider."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "reference": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r128_6_512_000\\quality_v021_p1_r128_6_512_000_00001_.png",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "clip_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dino_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--facebook--dinov2-base\\snapshots\\f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "candidates": [
+    {
+      "label": "research_quality_baked_4step_fixed_512_000",
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\research_quality_baked_4step_fixed_512_000\\research_quality_baked_4step_fixed_512_000_00001_.png",
+      "pixel_mae_rgb": 0.054152220487594604,
+      "pixel_rmse_rgb": 0.08398071676492691,
+      "pixel_max_abs_rgb": 0.9960784316062927,
+      "neighbor_gradient_mean": 0.002849272219464183,
+      "laplacian_mean_abs": 0.016016388311982155,
+      "clip_prompt_alignment": 0.31782010197639465,
+      "clip_image_cosine_vs_reference": 0.9479193091392517,
+      "dino_image_cosine_vs_reference": 0.924423098564148,
+      "dino_l2_vs_reference": 0.38878512382507324
+    },
+    {
+      "label": "research_quality_baked_2step_fixed_512_000",
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\research_quality_baked_2step_fixed_512_000\\research_quality_baked_2step_fixed_512_000_00001_.png",
+      "pixel_mae_rgb": 0.04887286201119423,
+      "pixel_rmse_rgb": 0.07482993602752686,
+      "pixel_max_abs_rgb": 0.9921568632125854,
+      "neighbor_gradient_mean": 0.0013869790127500892,
+      "laplacian_mean_abs": 0.01143258810043335,
+      "clip_prompt_alignment": 0.31056898832321167,
+      "clip_image_cosine_vs_reference": 0.914862871170044,
+      "dino_image_cosine_vs_reference": 0.8037223815917969,
+      "dino_l2_vs_reference": 0.6265425682067871
+    },
+    {
+      "label": "research_quality_baked_1step_fixed_512_000",
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\research_quality_baked_1step_fixed_512_000\\research_quality_baked_1step_fixed_512_000_00001_.png",
+      "pixel_mae_rgb": 0.05112598463892937,
+      "pixel_rmse_rgb": 0.08078388124704361,
+      "pixel_max_abs_rgb": 1.0,
+      "neighbor_gradient_mean": 0.0010217890376225114,
+      "laplacian_mean_abs": 0.007976683788001537,
+      "clip_prompt_alignment": 0.27977049350738525,
+      "clip_image_cosine_vs_reference": 0.8042985796928406,
+      "dino_image_cosine_vs_reference": 0.4587666392326355,
+      "dino_l2_vs_reference": 1.0404165983200073
+    }
+  ]
+}

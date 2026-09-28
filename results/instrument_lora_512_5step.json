@@ -1,0 +1,1788 @@
+[
+  {
+    "prompt_id": "f43ed3b3-90e4-43ab-b8ed-c0fd6b164788",
+    "elapsed_seconds": 6.737675499985926,
+    "size": 512,
+    "seed": 42,
+    "prompt": "A premium futuristic AI image-generation emblem designed as a Telegram bot profile picture, centered composition, a sleek abstract letter \"R\" formed from flowing luminous light and tiny digital particles, subtle neural-network geometry and generative-art patterns surrounding it, cinematic sci-fi aesthetic, deep black background, electric cyan and violet highlights, glossy glass-metal details, professional technology logo, sharp details, dramatic studio lighting, perfectly centered, square composition, no watermark Variation marker 0.",
+    "schedule": "v02_5step",
+    "raw_sigmas": [
+      1.0,
+      0.875,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "effective_sigmas": [
+      1.0,
+      0.9230565544529384,
+      0.8371702074278128,
+      0.6315122047992724,
+      0.3635699938957204,
+      0.0
+    ],
+    "models": {
+      "dit": "qwen_image_2.1_int8_convrot.safetensors",
+      "dit_loader": "safetensors",
+      "text_encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "vae": "qwen_image_2.1_vae_bf16.safetensors",
+      "lora": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+      "lora_strength": 1.0
+    },
+    "settings": {
+      "cache_device": "gpu",
+      "cache_dtype": "default",
+      "positive_only": true,
+      "text_encoder_device": "default",
+      "attention_backend": "default",
+      "sampler": "euler",
+      "cfg": 1.0
+    },
+    "node_durations": {
+      "7": {
+        "class_type": "ManualSigmas",
+        "seconds": 0.005042076110839844
+      },
+      "5": {
+        "class_type": "TextEncodeQwenImage21",
+        "seconds": 1.3006768226623535
+      },
+      "1": {
+        "class_type": "UNETLoader",
+        "seconds": 0.12015128135681152
+      },
+      "2": {
+        "class_type": "LoraLoaderModelOnly",
+        "seconds": 0.07420992851257324
+      },
+      "14": {
+        "class_type": "QwenImage21Cache",
+        "seconds": 0.000499725341796875
+      },
+      "9": {
+        "class_type": "BasicGuider",
+        "seconds": 0.0010006427764892578
+      },
+      "10": {
+        "class_type": "RandomNoise",
+        "seconds": 0.0009999275207519531
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "seconds": 4.4187493324279785
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "seconds": 0.5568130016326904
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "seconds": 0.04459953308105469
+      }
+    },
+    "sampler_progress": [
+      {
+        "node": "11",
+        "state": "running",
+        "value": 0.0,
+        "max": 1.0,
+        "time": 1790325935.4331434
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 1,
+        "max": 5,
+        "time": 1790325939.1979127
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 2,
+        "max": 5,
+        "time": 1790325939.3542476
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 3,
+        "max": 5,
+        "time": 1790325939.5063763
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 4,
+        "max": 5,
+        "time": 1790325939.675789
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 5,
+        "max": 5,
+        "time": 1790325939.827849
+      },
+      {
+        "node": "11",
+        "state": "finished",
+        "value": 5,
+        "max": 5,
+        "time": 1790325939.8518927
+      }
+    ],
+    "step_intervals": [
+      {
+        "step": 0,
+        "seconds_since_previous_event": 0.0
+      },
+      {
+        "step": 1,
+        "seconds_since_previous_event": 3.7647693157196045
+      },
+      {
+        "step": 2,
+        "seconds_since_previous_event": 0.15633487701416016
+      },
+      {
+        "step": 3,
+        "seconds_since_previous_event": 0.1521286964416504
+      },
+      {
+        "step": 4,
+        "seconds_since_previous_event": 0.16941285133361816
+      },
+      {
+        "step": 5,
+        "seconds_since_previous_event": 0.15205979347229004
+      }
+    ],
+    "outputs": [
+      {
+        "node": "13",
+        "source": "D:\\Project\\1secimage\\out\\comfy\\instrument_lora_512_5step_512_000_00001_.png",
+        "copy": "D:\\Project\\1secimage\\out\\benchmarks\\instrument_lora_512_5step\\instrument_lora_512_5step_512_000\\instrument_lora_512_5step_512_000_00001_.png",
+        "filename": "instrument_lora_512_5step_512_000_00001_.png",
+        "subfolder": ""
+      }
+    ],
+    "history_status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "f43ed3b3-90e4-43ab-b8ed-c0fd6b164788",
+            "timestamp": 1790325933726
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "3",
+              "4",
+              "6",
+              "8"
+            ],
+            "prompt_id": "f43ed3b3-90e4-43ab-b8ed-c0fd6b164788",
+            "timestamp": 1790325933923
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "f43ed3b3-90e4-43ab-b8ed-c0fd6b164788",
+            "timestamp": 1790325940453
+          }
+        ]
+      ]
+    },
+    "gpu_summary": {
+      "peak_memory_used_mib": 15327.0,
+      "minimum_memory_free_mib": 781.0,
+      "maximum_utilization_percent": 95.0,
+      "mean_power_watts": 62.37111111111111,
+      "maximum_power_watts": 118.34,
+      "maximum_temperature_c": 68.0,
+      "minimum_sm_clock_mhz": 690.0,
+      "sample_count": 36
+    },
+    "gpu_samples": [
+      {
+        "time": 1790325933.7861166,
+        "memory.used": 13659.0,
+        "memory.free": 2449.0,
+        "utilization.gpu": 15.0,
+        "power.draw": 34.55,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 1770.0
+      },
+      {
+        "time": 1790325933.958714,
+        "memory.used": 7515.0,
+        "memory.free": 8593.0,
+        "utilization.gpu": 4.0,
+        "power.draw": 32.5,
+        "temperature.gpu": 55.0,
+        "clocks.current.sm": 765.0
+      },
+      {
+        "time": 1790325934.1307726,
+        "memory.used": 7507.0,
+        "memory.free": 8601.0,
+        "utilization.gpu": 4.0,
+        "power.draw": 32.5,
+        "temperature.gpu": 55.0,
+        "clocks.current.sm": 765.0
+      },
+      {
+        "time": 1790325934.317915,
+        "memory.used": 8106.0,
+        "memory.free": 8002.0,
+        "utilization.gpu": 4.0,
+        "power.draw": 32.5,
+        "temperature.gpu": 55.0,
+        "clocks.current.sm": 765.0
+      },
+      {
+        "time": 1790325934.5112398,
+        "memory.used": 8426.0,
+        "memory.free": 7682.0,
+        "utilization.gpu": 56.0,
+        "power.draw": 28.76,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 690.0
+      },
+      {
+        "time": 1790325934.693685,
+        "memory.used": 8682.0,
+        "memory.free": 7426.0,
+        "utilization.gpu": 56.0,
+        "power.draw": 28.76,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 690.0
+      },
+      {
+        "time": 1790325934.8816738,
+        "memory.used": 9325.0,
+        "memory.free": 6783.0,
+        "utilization.gpu": 56.0,
+        "power.draw": 28.76,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 690.0
+      },
+      {
+        "time": 1790325935.0677197,
+        "memory.used": 10003.0,
+        "memory.free": 6105.0,
+        "utilization.gpu": 51.0,
+        "power.draw": 55.15,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325935.2513757,
+        "memory.used": 10259.0,
+        "memory.free": 5849.0,
+        "utilization.gpu": 51.0,
+        "power.draw": 55.15,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325935.4221237,
+        "memory.used": 10259.0,
+        "memory.free": 5849.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 71.21,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325935.6190243,
+        "memory.used": 10675.0,
+        "memory.free": 5433.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 71.21,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325935.8031816,
+        "memory.used": 11494.0,
+        "memory.free": 4614.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 71.21,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325935.9852943,
+        "memory.used": 12038.0,
+        "memory.free": 4070.0,
+        "utilization.gpu": 51.0,
+        "power.draw": 57.52,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325936.1725428,
+        "memory.used": 12471.0,
+        "memory.free": 3637.0,
+        "utilization.gpu": 51.0,
+        "power.draw": 57.52,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325936.436241,
+        "memory.used": 12727.0,
+        "memory.free": 3381.0,
+        "utilization.gpu": 27.0,
+        "power.draw": 55.86,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325936.6866093,
+        "memory.used": 13062.0,
+        "memory.free": 3046.0,
+        "utilization.gpu": 27.0,
+        "power.draw": 55.86,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325936.8906546,
+        "memory.used": 13309.0,
+        "memory.free": 2799.0,
+        "utilization.gpu": 27.0,
+        "power.draw": 55.86,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325937.1115975,
+        "memory.used": 13574.0,
+        "memory.free": 2534.0,
+        "utilization.gpu": 27.0,
+        "power.draw": 59.67,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325937.3003218,
+        "memory.used": 13990.0,
+        "memory.free": 2118.0,
+        "utilization.gpu": 27.0,
+        "power.draw": 59.67,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325937.4852617,
+        "memory.used": 14406.0,
+        "memory.free": 1702.0,
+        "utilization.gpu": 49.0,
+        "power.draw": 56.47,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325937.690956,
+        "memory.used": 14847.0,
+        "memory.free": 1261.0,
+        "utilization.gpu": 49.0,
+        "power.draw": 56.47,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325937.8998773,
+        "memory.used": 15327.0,
+        "memory.free": 781.0,
+        "utilization.gpu": 49.0,
+        "power.draw": 56.47,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325938.095701,
+        "memory.used": 15177.0,
+        "memory.free": 931.0,
+        "utilization.gpu": 49.0,
+        "power.draw": 62.52,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325938.2809548,
+        "memory.used": 15274.0,
+        "memory.free": 834.0,
+        "utilization.gpu": 49.0,
+        "power.draw": 62.52,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325938.4686956,
+        "memory.used": 15242.0,
+        "memory.free": 866.0,
+        "utilization.gpu": 48.0,
+        "power.draw": 64.85,
+        "temperature.gpu": 60.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325938.6578066,
+        "memory.used": 15182.0,
+        "memory.free": 926.0,
+        "utilization.gpu": 48.0,
+        "power.draw": 64.85,
+        "temperature.gpu": 60.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325938.8447206,
+        "memory.used": 15150.0,
+        "memory.free": 958.0,
+        "utilization.gpu": 48.0,
+        "power.draw": 64.85,
+        "temperature.gpu": 60.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325939.0341907,
+        "memory.used": 15152.0,
+        "memory.free": 956.0,
+        "utilization.gpu": 46.0,
+        "power.draw": 62.97,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325939.2109199,
+        "memory.used": 15128.0,
+        "memory.free": 980.0,
+        "utilization.gpu": 46.0,
+        "power.draw": 62.97,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325939.3968942,
+        "memory.used": 15112.0,
+        "memory.free": 996.0,
+        "utilization.gpu": 46.0,
+        "power.draw": 62.97,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325939.583522,
+        "memory.used": 15112.0,
+        "memory.free": 996.0,
+        "utilization.gpu": 95.0,
+        "power.draw": 77.35,
+        "temperature.gpu": 68.0,
+        "clocks.current.sm": 2745.0
+      },
+      {
+        "time": 1790325939.7699244,
+        "memory.used": 15095.0,
+        "memory.free": 1013.0,
+        "utilization.gpu": 95.0,
+        "power.draw": 77.35,
+        "temperature.gpu": 68.0,
+        "clocks.current.sm": 2745.0
+      },
+      {
+        "time": 1790325939.960061,
+        "memory.used": 14559.0,
+        "memory.free": 1549.0,
+        "utilization.gpu": 84.0,
+        "power.draw": 118.34,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2775.0
+      },
+      {
+        "time": 1790325940.1464496,
+        "memory.used": 15168.0,
+        "memory.free": 940.0,
+        "utilization.gpu": 84.0,
+        "power.draw": 118.34,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2775.0
+      },
+      {
+        "time": 1790325940.33441,
+        "memory.used": 15213.0,
+        "memory.free": 895.0,
+        "utilization.gpu": 84.0,
+        "power.draw": 118.34,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2775.0
+      },
+      {
+        "time": 1790325940.516472,
+        "memory.used": 14701.0,
+        "memory.free": 1407.0,
+        "utilization.gpu": 38.0,
+        "power.draw": 113.51,
+        "temperature.gpu": 64.0,
+        "clocks.current.sm": 2790.0
+      }
+    ],
+    "run_index": 0,
+    "warmup": true,
+    "started_at": 1790325933.7146537,
+    "tag": "instrument_lora_512_5step",
+    "gpu": {
+      "name": "cuda:0 NVIDIA GeForce RTX 4060 Ti : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 17175150592,
+      "vram_free": 2010985388,
+      "torch_vram_total": 33554432,
+      "torch_vram_free": 23733164
+    }
+  },
+  {
+    "prompt_id": "68949e73-bdd8-4536-801b-a97e5d0a626a",
+    "elapsed_seconds": 4.58085579998442,
+    "size": 512,
+    "seed": 42,
+    "prompt": "A premium futuristic AI image-generation emblem designed as a Telegram bot profile picture, centered composition, a sleek abstract letter \"R\" formed from flowing luminous light and tiny digital particles, subtle neural-network geometry and generative-art patterns surrounding it, cinematic sci-fi aesthetic, deep black background, electric cyan and violet highlights, glossy glass-metal details, professional technology logo, sharp details, dramatic studio lighting, perfectly centered, square composition, no watermark Variation marker 1.",
+    "schedule": "v02_5step",
+    "raw_sigmas": [
+      1.0,
+      0.875,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "effective_sigmas": [
+      1.0,
+      0.9230565544529384,
+      0.8371702074278128,
+      0.6315122047992724,
+      0.3635699938957204,
+      0.0
+    ],
+    "models": {
+      "dit": "qwen_image_2.1_int8_convrot.safetensors",
+      "dit_loader": "safetensors",
+      "text_encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "vae": "qwen_image_2.1_vae_bf16.safetensors",
+      "lora": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+      "lora_strength": 1.0
+    },
+    "settings": {
+      "cache_device": "gpu",
+      "cache_dtype": "default",
+      "positive_only": true,
+      "text_encoder_device": "default",
+      "attention_backend": "default",
+      "sampler": "euler",
+      "cfg": 1.0
+    },
+    "node_durations": {
+      "5": {
+        "class_type": "TextEncodeQwenImage21",
+        "seconds": 1.9769365787506104
+      },
+      "9": {
+        "class_type": "BasicGuider",
+        "seconds": 0.001505136489868164
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "seconds": 2.0075628757476807
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "seconds": 0.5475163459777832
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "seconds": 0.03204846382141113
+      }
+    },
+    "sampler_progress": [
+      {
+        "node": "11",
+        "state": "running",
+        "value": 0.0,
+        "max": 1.0,
+        "time": 1790325943.1278346
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 1,
+        "max": 5,
+        "time": 1790325944.2228248
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 2,
+        "max": 5,
+        "time": 1790325944.3656795
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 3,
+        "max": 5,
+        "time": 1790325944.5049393
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 4,
+        "max": 5,
+        "time": 1790325944.681821
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 5,
+        "max": 5,
+        "time": 1790325944.8255157
+      },
+      {
+        "node": "11",
+        "state": "finished",
+        "value": 5,
+        "max": 5,
+        "time": 1790325945.1353974
+      }
+    ],
+    "step_intervals": [
+      {
+        "step": 0,
+        "seconds_since_previous_event": 0.0
+      },
+      {
+        "step": 1,
+        "seconds_since_previous_event": 1.0949902534484863
+      },
+      {
+        "step": 2,
+        "seconds_since_previous_event": 0.1428546905517578
+      },
+      {
+        "step": 3,
+        "seconds_since_previous_event": 0.13925981521606445
+      },
+      {
+        "step": 4,
+        "seconds_since_previous_event": 0.1768817901611328
+      },
+      {
+        "step": 5,
+        "seconds_since_previous_event": 0.14369463920593262
+      }
+    ],
+    "outputs": [
+      {
+        "node": "13",
+        "source": "D:\\Project\\1secimage\\out\\comfy\\instrument_lora_512_5step_512_001_00001_.png",
+        "copy": "D:\\Project\\1secimage\\out\\benchmarks\\instrument_lora_512_5step\\instrument_lora_512_5step_512_001\\instrument_lora_512_5step_512_001_00001_.png",
+        "filename": "instrument_lora_512_5step_512_001_00001_.png",
+        "subfolder": ""
+      }
+    ],
+    "history_status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "68949e73-bdd8-4536-801b-a97e5d0a626a",
+            "timestamp": 1790325941144
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "10",
+              "2",
+              "14"
+            ],
+            "prompt_id": "68949e73-bdd8-4536-801b-a97e5d0a626a",
+            "timestamp": 1790325941147
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "68949e73-bdd8-4536-801b-a97e5d0a626a",
+            "timestamp": 1790325945714
+          }
+        ]
+      ]
+    },
+    "gpu_summary": {
+      "peak_memory_used_mib": 15406.0,
+      "minimum_memory_free_mib": 702.0,
+      "maximum_utilization_percent": 100.0,
+      "mean_power_watts": 73.18916666666667,
+      "maximum_power_watts": 114.75,
+      "maximum_temperature_c": 68.0,
+      "minimum_sm_clock_mhz": 2730.0,
+      "sample_count": 24
+    },
+    "gpu_samples": [
+      {
+        "time": 1790325941.2049763,
+        "memory.used": 14634.0,
+        "memory.free": 1474.0,
+        "utilization.gpu": 0.0,
+        "power.draw": 69.12,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325941.439431,
+        "memory.used": 14649.0,
+        "memory.free": 1459.0,
+        "utilization.gpu": 2.0,
+        "power.draw": 46.23,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325941.6739805,
+        "memory.used": 14617.0,
+        "memory.free": 1491.0,
+        "utilization.gpu": 2.0,
+        "power.draw": 46.23,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325941.8775437,
+        "memory.used": 15197.0,
+        "memory.free": 911.0,
+        "utilization.gpu": 2.0,
+        "power.draw": 46.23,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325942.0892212,
+        "memory.used": 15286.0,
+        "memory.free": 822.0,
+        "utilization.gpu": 28.0,
+        "power.draw": 40.26,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325942.299863,
+        "memory.used": 15271.0,
+        "memory.free": 837.0,
+        "utilization.gpu": 28.0,
+        "power.draw": 40.26,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325942.4841104,
+        "memory.used": 15251.0,
+        "memory.free": 857.0,
+        "utilization.gpu": 83.0,
+        "power.draw": 60.82,
+        "temperature.gpu": 63.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325942.6672027,
+        "memory.used": 15284.0,
+        "memory.free": 824.0,
+        "utilization.gpu": 83.0,
+        "power.draw": 60.82,
+        "temperature.gpu": 63.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325942.8557353,
+        "memory.used": 15220.0,
+        "memory.free": 888.0,
+        "utilization.gpu": 83.0,
+        "power.draw": 60.82,
+        "temperature.gpu": 63.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325943.0471523,
+        "memory.used": 15200.0,
+        "memory.free": 908.0,
+        "utilization.gpu": 31.0,
+        "power.draw": 74.47,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325943.228979,
+        "memory.used": 14868.0,
+        "memory.free": 1240.0,
+        "utilization.gpu": 31.0,
+        "power.draw": 74.47,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325943.4442005,
+        "memory.used": 15100.0,
+        "memory.free": 1008.0,
+        "utilization.gpu": 42.0,
+        "power.draw": 68.41,
+        "temperature.gpu": 64.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325943.6359465,
+        "memory.used": 15171.0,
+        "memory.free": 937.0,
+        "utilization.gpu": 42.0,
+        "power.draw": 68.41,
+        "temperature.gpu": 64.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325943.820051,
+        "memory.used": 14979.0,
+        "memory.free": 1129.0,
+        "utilization.gpu": 42.0,
+        "power.draw": 68.41,
+        "temperature.gpu": 64.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325944.020493,
+        "memory.used": 15219.0,
+        "memory.free": 889.0,
+        "utilization.gpu": 50.0,
+        "power.draw": 68.5,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325944.2087831,
+        "memory.used": 15380.0,
+        "memory.free": 728.0,
+        "utilization.gpu": 50.0,
+        "power.draw": 68.5,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325944.3937209,
+        "memory.used": 15316.0,
+        "memory.free": 792.0,
+        "utilization.gpu": 50.0,
+        "power.draw": 68.5,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325944.5819962,
+        "memory.used": 15315.0,
+        "memory.free": 793.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 87.46,
+        "temperature.gpu": 68.0,
+        "clocks.current.sm": 2730.0
+      },
+      {
+        "time": 1790325944.7534244,
+        "memory.used": 15386.0,
+        "memory.free": 722.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 87.46,
+        "temperature.gpu": 68.0,
+        "clocks.current.sm": 2730.0
+      },
+      {
+        "time": 1790325944.9423501,
+        "memory.used": 15406.0,
+        "memory.free": 702.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 107.22,
+        "temperature.gpu": 60.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325945.1142147,
+        "memory.used": 15381.0,
+        "memory.free": 727.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 107.22,
+        "temperature.gpu": 60.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325945.3274848,
+        "memory.used": 15261.0,
+        "memory.free": 847.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 107.22,
+        "temperature.gpu": 60.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325945.512362,
+        "memory.used": 15284.0,
+        "memory.free": 824.0,
+        "utilization.gpu": 47.0,
+        "power.draw": 114.75,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325945.6904197,
+        "memory.used": 15047.0,
+        "memory.free": 1061.0,
+        "utilization.gpu": 47.0,
+        "power.draw": 114.75,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      }
+    ],
+    "run_index": 1,
+    "warmup": false,
+    "started_at": 1790325941.1308563,
+    "tag": "instrument_lora_512_5step",
+    "gpu": {
+      "name": "cuda:0 NVIDIA GeForce RTX 4060 Ti : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 17175150592,
+      "vram_free": 2010985388,
+      "torch_vram_total": 33554432,
+      "torch_vram_free": 23733164
+    }
+  },
+  {
+    "prompt_id": "84ec0822-b999-4bea-9e91-a78d9cd57d74",
+    "elapsed_seconds": 4.358269999996992,
+    "size": 512,
+    "seed": 42,
+    "prompt": "A premium futuristic AI image-generation emblem designed as a Telegram bot profile picture, centered composition, a sleek abstract letter \"R\" formed from flowing luminous light and tiny digital particles, subtle neural-network geometry and generative-art patterns surrounding it, cinematic sci-fi aesthetic, deep black background, electric cyan and violet highlights, glossy glass-metal details, professional technology logo, sharp details, dramatic studio lighting, perfectly centered, square composition, no watermark Variation marker 2.",
+    "schedule": "v02_5step",
+    "raw_sigmas": [
+      1.0,
+      0.875,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "effective_sigmas": [
+      1.0,
+      0.9230565544529384,
+      0.8371702074278128,
+      0.6315122047992724,
+      0.3635699938957204,
+      0.0
+    ],
+    "models": {
+      "dit": "qwen_image_2.1_int8_convrot.safetensors",
+      "dit_loader": "safetensors",
+      "text_encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "vae": "qwen_image_2.1_vae_bf16.safetensors",
+      "lora": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+      "lora_strength": 1.0
+    },
+    "settings": {
+      "cache_device": "gpu",
+      "cache_dtype": "default",
+      "positive_only": true,
+      "text_encoder_device": "default",
+      "attention_backend": "default",
+      "sampler": "euler",
+      "cfg": 1.0
+    },
+    "node_durations": {
+      "5": {
+        "class_type": "TextEncodeQwenImage21",
+        "seconds": 2.4237303733825684
+      },
+      "9": {
+        "class_type": "BasicGuider",
+        "seconds": 0.0009996891021728516
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "seconds": 1.4815425872802734
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "seconds": 0.4035167694091797
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "seconds": 0.031603336334228516
+      }
+    },
+    "sampler_progress": [
+      {
+        "node": "11",
+        "state": "running",
+        "value": 0.0,
+        "max": 1.0,
+        "time": 1790325948.268581
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 1,
+        "max": 5,
+        "time": 1790325949.0829153
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 2,
+        "max": 5,
+        "time": 1790325949.2336571
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 3,
+        "max": 5,
+        "time": 1790325949.377554
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 4,
+        "max": 5,
+        "time": 1790325949.5528104
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 5,
+        "max": 5,
+        "time": 1790325949.7099917
+      },
+      {
+        "node": "11",
+        "state": "finished",
+        "value": 5,
+        "max": 5,
+        "time": 1790325949.7501235
+      }
+    ],
+    "step_intervals": [
+      {
+        "step": 0,
+        "seconds_since_previous_event": 0.0
+      },
+      {
+        "step": 1,
+        "seconds_since_previous_event": 0.8143343925476074
+      },
+      {
+        "step": 2,
+        "seconds_since_previous_event": 0.1507418155670166
+      },
+      {
+        "step": 3,
+        "seconds_since_previous_event": 0.14389681816101074
+      },
+      {
+        "step": 4,
+        "seconds_since_previous_event": 0.17525649070739746
+      },
+      {
+        "step": 5,
+        "seconds_since_previous_event": 0.1571812629699707
+      }
+    ],
+    "outputs": [
+      {
+        "node": "13",
+        "source": "D:\\Project\\1secimage\\out\\comfy\\instrument_lora_512_5step_512_002_00001_.png",
+        "copy": "D:\\Project\\1secimage\\out\\benchmarks\\instrument_lora_512_5step\\instrument_lora_512_5step_512_002\\instrument_lora_512_5step_512_002_00001_.png",
+        "filename": "instrument_lora_512_5step_512_002_00001_.png",
+        "subfolder": ""
+      }
+    ],
+    "history_status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "84ec0822-b999-4bea-9e91-a78d9cd57d74",
+            "timestamp": 1790325945833
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "10",
+              "2",
+              "14"
+            ],
+            "prompt_id": "84ec0822-b999-4bea-9e91-a78d9cd57d74",
+            "timestamp": 1790325945840
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "84ec0822-b999-4bea-9e91-a78d9cd57d74",
+            "timestamp": 1790325950184
+          }
+        ]
+      ]
+    },
+    "gpu_summary": {
+      "peak_memory_used_mib": 15411.0,
+      "minimum_memory_free_mib": 697.0,
+      "maximum_utilization_percent": 97.0,
+      "mean_power_watts": 72.52,
+      "maximum_power_watts": 119.01,
+      "maximum_temperature_c": 69.0,
+      "minimum_sm_clock_mhz": 2730.0,
+      "sample_count": 23
+    },
+    "gpu_samples": [
+      {
+        "time": 1790325945.8960788,
+        "memory.used": 14804.0,
+        "memory.free": 1304.0,
+        "utilization.gpu": 47.0,
+        "power.draw": 114.75,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325946.086091,
+        "memory.used": 15220.0,
+        "memory.free": 888.0,
+        "utilization.gpu": 6.0,
+        "power.draw": 77.59,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325946.3453026,
+        "memory.used": 15274.0,
+        "memory.free": 834.0,
+        "utilization.gpu": 6.0,
+        "power.draw": 77.59,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325946.609432,
+        "memory.used": 15280.0,
+        "memory.free": 828.0,
+        "utilization.gpu": 2.0,
+        "power.draw": 59.87,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325946.7807813,
+        "memory.used": 15280.0,
+        "memory.free": 828.0,
+        "utilization.gpu": 2.0,
+        "power.draw": 59.87,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325946.970922,
+        "memory.used": 15350.0,
+        "memory.free": 758.0,
+        "utilization.gpu": 7.0,
+        "power.draw": 41.82,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325947.202404,
+        "memory.used": 15350.0,
+        "memory.free": 758.0,
+        "utilization.gpu": 7.0,
+        "power.draw": 41.82,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325947.3957822,
+        "memory.used": 15381.0,
+        "memory.free": 727.0,
+        "utilization.gpu": 7.0,
+        "power.draw": 41.82,
+        "temperature.gpu": 56.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325947.591669,
+        "memory.used": 15411.0,
+        "memory.free": 697.0,
+        "utilization.gpu": 59.0,
+        "power.draw": 63.94,
+        "temperature.gpu": 65.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325947.778877,
+        "memory.used": 15405.0,
+        "memory.free": 703.0,
+        "utilization.gpu": 59.0,
+        "power.draw": 63.94,
+        "temperature.gpu": 65.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325947.9522865,
+        "memory.used": 15403.0,
+        "memory.free": 705.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 73.25,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325948.1432066,
+        "memory.used": 15403.0,
+        "memory.free": 705.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 73.25,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325948.3137386,
+        "memory.used": 15083.0,
+        "memory.free": 1025.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 73.25,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325948.4837232,
+        "memory.used": 15408.0,
+        "memory.free": 700.0,
+        "utilization.gpu": 10.0,
+        "power.draw": 63.65,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325948.669995,
+        "memory.used": 15403.0,
+        "memory.free": 705.0,
+        "utilization.gpu": 10.0,
+        "power.draw": 63.65,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325948.8451412,
+        "memory.used": 15369.0,
+        "memory.free": 739.0,
+        "utilization.gpu": 10.0,
+        "power.draw": 63.65,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325949.0337484,
+        "memory.used": 15401.0,
+        "memory.free": 707.0,
+        "utilization.gpu": 53.0,
+        "power.draw": 68.56,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325949.2010953,
+        "memory.used": 15337.0,
+        "memory.free": 771.0,
+        "utilization.gpu": 53.0,
+        "power.draw": 68.56,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325949.3685188,
+        "memory.used": 15329.0,
+        "memory.free": 779.0,
+        "utilization.gpu": 53.0,
+        "power.draw": 68.56,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325949.5457993,
+        "memory.used": 15324.0,
+        "memory.free": 784.0,
+        "utilization.gpu": 97.0,
+        "power.draw": 96.52,
+        "temperature.gpu": 69.0,
+        "clocks.current.sm": 2730.0
+      },
+      {
+        "time": 1790325949.725525,
+        "memory.used": 15309.0,
+        "memory.free": 799.0,
+        "utilization.gpu": 97.0,
+        "power.draw": 96.52,
+        "temperature.gpu": 69.0,
+        "clocks.current.sm": 2730.0
+      },
+      {
+        "time": 1790325949.9128487,
+        "memory.used": 15250.0,
+        "memory.free": 858.0,
+        "utilization.gpu": 97.0,
+        "power.draw": 96.52,
+        "temperature.gpu": 69.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325950.0902178,
+        "memory.used": 15387.0,
+        "memory.free": 721.0,
+        "utilization.gpu": 26.0,
+        "power.draw": 119.01,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      }
+    ],
+    "run_index": 2,
+    "warmup": false,
+    "started_at": 1790325945.8252864,
+    "tag": "instrument_lora_512_5step",
+    "gpu": {
+      "name": "cuda:0 NVIDIA GeForce RTX 4060 Ti : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 17175150592,
+      "vram_free": 2010985388,
+      "torch_vram_total": 33554432,
+      "torch_vram_free": 23733164
+    }
+  },
+  {
+    "prompt_id": "abcb32a0-cc53-41f8-a97e-fb5153a408a7",
+    "elapsed_seconds": 3.68671280000126,
+    "size": 512,
+    "seed": 42,
+    "prompt": "A premium futuristic AI image-generation emblem designed as a Telegram bot profile picture, centered composition, a sleek abstract letter \"R\" formed from flowing luminous light and tiny digital particles, subtle neural-network geometry and generative-art patterns surrounding it, cinematic sci-fi aesthetic, deep black background, electric cyan and violet highlights, glossy glass-metal details, professional technology logo, sharp details, dramatic studio lighting, perfectly centered, square composition, no watermark Variation marker 3.",
+    "schedule": "v02_5step",
+    "raw_sigmas": [
+      1.0,
+      0.875,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "effective_sigmas": [
+      1.0,
+      0.9230565544529384,
+      0.8371702074278128,
+      0.6315122047992724,
+      0.3635699938957204,
+      0.0
+    ],
+    "models": {
+      "dit": "qwen_image_2.1_int8_convrot.safetensors",
+      "dit_loader": "safetensors",
+      "text_encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "vae": "qwen_image_2.1_vae_bf16.safetensors",
+      "lora": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+      "lora_strength": 1.0
+    },
+    "settings": {
+      "cache_device": "gpu",
+      "cache_dtype": "default",
+      "positive_only": true,
+      "text_encoder_device": "default",
+      "attention_backend": "default",
+      "sampler": "euler",
+      "cfg": 1.0
+    },
+    "node_durations": {
+      "5": {
+        "class_type": "TextEncodeQwenImage21",
+        "seconds": 1.3504245281219482
+      },
+      "9": {
+        "class_type": "BasicGuider",
+        "seconds": 0.0010025501251220703
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "seconds": 1.8853380680084229
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "seconds": 0.4053051471710205
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "seconds": 0.03459811210632324
+      }
+    },
+    "sampler_progress": [
+      {
+        "node": "11",
+        "state": "running",
+        "value": 0.0,
+        "max": 1.0,
+        "time": 1790325951.657935
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 1,
+        "max": 5,
+        "time": 1790325952.8930442
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 2,
+        "max": 5,
+        "time": 1790325953.0419083
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 3,
+        "max": 5,
+        "time": 1790325953.2084508
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 4,
+        "max": 5,
+        "time": 1790325953.3541868
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 5,
+        "max": 5,
+        "time": 1790325953.5086665
+      },
+      {
+        "node": "11",
+        "state": "finished",
+        "value": 5,
+        "max": 5,
+        "time": 1790325953.543273
+      }
+    ],
+    "step_intervals": [
+      {
+        "step": 0,
+        "seconds_since_previous_event": 0.0
+      },
+      {
+        "step": 1,
+        "seconds_since_previous_event": 1.2351093292236328
+      },
+      {
+        "step": 2,
+        "seconds_since_previous_event": 0.1488640308380127
+      },
+      {
+        "step": 3,
+        "seconds_since_previous_event": 0.16654253005981445
+      },
+      {
+        "step": 4,
+        "seconds_since_previous_event": 0.1457359790802002
+      },
+      {
+        "step": 5,
+        "seconds_since_previous_event": 0.1544797420501709
+      }
+    ],
+    "outputs": [
+      {
+        "node": "13",
+        "source": "D:\\Project\\1secimage\\out\\comfy\\instrument_lora_512_5step_512_003_00001_.png",
+        "copy": "D:\\Project\\1secimage\\out\\benchmarks\\instrument_lora_512_5step\\instrument_lora_512_5step_512_003\\instrument_lora_512_5step_512_003_00001_.png",
+        "filename": "instrument_lora_512_5step_512_003_00001_.png",
+        "subfolder": ""
+      }
+    ],
+    "history_status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "abcb32a0-cc53-41f8-a97e-fb5153a408a7",
+            "timestamp": 1790325950301
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "10",
+              "2",
+              "14"
+            ],
+            "prompt_id": "abcb32a0-cc53-41f8-a97e-fb5153a408a7",
+            "timestamp": 1790325950305
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "abcb32a0-cc53-41f8-a97e-fb5153a408a7",
+            "timestamp": 1790325953982
+          }
+        ]
+      ]
+    },
+    "gpu_summary": {
+      "peak_memory_used_mib": 15505.0,
+      "minimum_memory_free_mib": 603.0,
+      "maximum_utilization_percent": 100.0,
+      "mean_power_watts": 88.284,
+      "maximum_power_watts": 126.12,
+      "maximum_temperature_c": 69.0,
+      "minimum_sm_clock_mhz": 2700.0,
+      "sample_count": 20
+    },
+    "gpu_samples": [
+      {
+        "time": 1790325950.351205,
+        "memory.used": 14857.0,
+        "memory.free": 1251.0,
+        "utilization.gpu": 26.0,
+        "power.draw": 119.01,
+        "temperature.gpu": 61.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325950.5391777,
+        "memory.used": 15273.0,
+        "memory.free": 835.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 111.77,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325950.724737,
+        "memory.used": 15297.0,
+        "memory.free": 811.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 111.77,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325950.8951442,
+        "memory.used": 15361.0,
+        "memory.free": 747.0,
+        "utilization.gpu": 3.0,
+        "power.draw": 111.77,
+        "temperature.gpu": 58.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325951.091156,
+        "memory.used": 15320.0,
+        "memory.free": 788.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 82.04,
+        "temperature.gpu": 68.0,
+        "clocks.current.sm": 2775.0
+      },
+      {
+        "time": 1790325951.3308551,
+        "memory.used": 15381.0,
+        "memory.free": 727.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 82.04,
+        "temperature.gpu": 68.0,
+        "clocks.current.sm": 2775.0
+      },
+      {
+        "time": 1790325951.597819,
+        "memory.used": 15406.0,
+        "memory.free": 702.0,
+        "utilization.gpu": 96.0,
+        "power.draw": 79.58,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325951.7973673,
+        "memory.used": 15235.0,
+        "memory.free": 873.0,
+        "utilization.gpu": 96.0,
+        "power.draw": 79.58,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325952.0158656,
+        "memory.used": 15459.0,
+        "memory.free": 649.0,
+        "utilization.gpu": 4.0,
+        "power.draw": 71.44,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325952.2028036,
+        "memory.used": 15505.0,
+        "memory.free": 603.0,
+        "utilization.gpu": 4.0,
+        "power.draw": 71.44,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325952.3729281,
+        "memory.used": 15505.0,
+        "memory.free": 603.0,
+        "utilization.gpu": 4.0,
+        "power.draw": 71.44,
+        "temperature.gpu": 57.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325952.562588,
+        "memory.used": 15457.0,
+        "memory.free": 651.0,
+        "utilization.gpu": 50.0,
+        "power.draw": 56.63,
+        "temperature.gpu": 64.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325952.752035,
+        "memory.used": 15393.0,
+        "memory.free": 715.0,
+        "utilization.gpu": 50.0,
+        "power.draw": 56.63,
+        "temperature.gpu": 64.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325952.937189,
+        "memory.used": 15313.0,
+        "memory.free": 795.0,
+        "utilization.gpu": 53.0,
+        "power.draw": 66.63,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325953.108991,
+        "memory.used": 15313.0,
+        "memory.free": 795.0,
+        "utilization.gpu": 53.0,
+        "power.draw": 66.63,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325953.2935383,
+        "memory.used": 15296.0,
+        "memory.free": 812.0,
+        "utilization.gpu": 53.0,
+        "power.draw": 66.63,
+        "temperature.gpu": 59.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790325953.4775326,
+        "memory.used": 15296.0,
+        "memory.free": 812.0,
+        "utilization.gpu": 99.0,
+        "power.draw": 111.51,
+        "temperature.gpu": 69.0,
+        "clocks.current.sm": 2700.0
+      },
+      {
+        "time": 1790325953.671009,
+        "memory.used": 15024.0,
+        "memory.free": 1084.0,
+        "utilization.gpu": 99.0,
+        "power.draw": 111.51,
+        "temperature.gpu": 69.0,
+        "clocks.current.sm": 2700.0
+      },
+      {
+        "time": 1790325953.836573,
+        "memory.used": 15312.0,
+        "memory.free": 796.0,
+        "utilization.gpu": 99.0,
+        "power.draw": 111.51,
+        "temperature.gpu": 69.0,
+        "clocks.current.sm": 2700.0
+      },
+      {
+        "time": 1790325954.0092404,
+        "memory.used": 14832.0,
+        "memory.free": 1276.0,
+        "utilization.gpu": 82.0,
+        "power.draw": 126.12,
+        "temperature.gpu": 65.0,
+        "clocks.current.sm": 2790.0
+      }
+    ],
+    "run_index": 3,
+    "warmup": false,
+    "started_at": 1790325950.2949743,
+    "tag": "instrument_lora_512_5step",
+    "gpu": {
+      "name": "cuda:0 NVIDIA GeForce RTX 4060 Ti : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 17175150592,
+      "vram_free": 2010985388,
+      "torch_vram_total": 33554432,
+      "torch_vram_free": 23733164
+    }
+  }
+]

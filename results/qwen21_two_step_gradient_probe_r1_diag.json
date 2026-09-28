@@ -1,0 +1,56 @@
+{
+  "mode": "gradient_only",
+  "manifest": "D:\\Project\\1secimage\\results\\qwen21_teacher_probe.json",
+  "dit": "H:\\1secimage\\models\\comfy-qwen21\\diffusion_models\\qwen_image_2.1_int8_convrot.safetensors",
+  "teacher_lora": "H:\\1secimage\\models\\comfy-qwen21\\loras\\Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+  "rank": 1,
+  "learning_rate": 0.0001,
+  "requested_steps": 1,
+  "correction_keys": 192,
+  "checkpoint_modules": 1,
+  "gradient_after_clear": {
+    "tensors": 384,
+    "l2": 1.3207362144650795e+20,
+    "max_abs": 4.726978168888073e+19,
+    "nonfinite_values": 0
+  },
+  "cuda_peak_allocated_mib": 19329.46142578125,
+  "cuda_peak_reserved_mib": 19472.0,
+  "total_elapsed_seconds": 46.91951509995852,
+  "output_lora": null,
+  "records": [
+    {
+      "index": 0,
+      "sample_id": "teacher_probe_000_seed42",
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "seed": 42,
+      "objective": {
+        "state_loss": 0.34915828704833984,
+        "final_loss": 0.18446937203407288,
+        "total_loss": 0.5336276292800903,
+        "gradient_tensors": 384,
+        "gradient_l2": 1.3207362144650795e+20,
+        "gradient_max_abs": 4.726978168888073e+19,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.0.attn.to_v.lora_down.weight",
+          "l2": 1.311808233309742e+20,
+          "max_abs": 4.726978168888073e+19
+        },
+        "predictions": {
+          "state_target_mean": -0.07667401432991028,
+          "state_target_std": 1.52212655544281,
+          "state_pred_mean": -0.06886821985244751,
+          "state_pred_std": 1.0502386093139648,
+          "final_target_mean": -0.07446259260177612,
+          "final_target_std": 1.3900208473205566,
+          "final_pred_mean": -0.0939059853553772,
+          "final_pred_std": 1.4741164445877075
+        },
+        "elapsed_seconds": 35.83103709999705
+      },
+      "elapsed_seconds": 46.32424990000436
+    }
+  ]
+}

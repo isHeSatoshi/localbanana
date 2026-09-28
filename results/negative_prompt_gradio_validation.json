@@ -1,0 +1,14 @@
+{
+  "false": {
+    "image": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\512_1790315028_62210b8b_00001_.png",
+    "execution_seconds": 9.125,
+    "negative_prompt_enabled": false,
+    "cfg": 1.0
+  },
+  "true": {
+    "image": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\512_1790315037_24b2b36a_00001_.png",
+    "execution_seconds": 6.04,
+    "negative_prompt_enabled": true,
+    "cfg": 4.0
+  }
+}

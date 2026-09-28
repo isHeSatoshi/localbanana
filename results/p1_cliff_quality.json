@@ -1,0 +1,86 @@
+{
+  "reference": "out\\benchmarks\\quality_v021_p1_r256_6_512_000\\quality_v021_p1_r256_6_512_000_00001_.png",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "clip_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dino_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--facebook--dinov2-base\\snapshots\\f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "candidates": [
+    {
+      "label": "p1_cliff_s6_512_001",
+      "image": "out\\benchmarks\\p1_cliff_s6_512_001\\p1_cliff_s6_512_001_00001_.png",
+      "pixel_mae_rgb": 0.07446232438087463,
+      "pixel_rmse_rgb": 0.11070029437541962,
+      "pixel_max_abs_rgb": 0.9607843160629272,
+      "neighbor_gradient_mean": 0.0021924313623458147,
+      "laplacian_mean_abs": 0.010829944163560867,
+      "clip_prompt_alignment": 0.2996353209018707,
+      "clip_image_cosine_vs_reference": 0.887931227684021,
+      "dino_image_cosine_vs_reference": 0.866529107093811,
+      "dino_l2_vs_reference": 0.5166639685630798
+    },
+    {
+      "label": "p1_cliff_s5_512_001",
+      "image": "out\\benchmarks\\p1_cliff_s5_512_001\\p1_cliff_s5_512_001_00001_.png",
+      "pixel_mae_rgb": 0.07143832743167877,
+      "pixel_rmse_rgb": 0.11225020885467529,
+      "pixel_max_abs_rgb": 0.9960784316062927,
+      "neighbor_gradient_mean": 0.002266406314447522,
+      "laplacian_mean_abs": 0.012177952565252781,
+      "clip_prompt_alignment": 0.3111729919910431,
+      "clip_image_cosine_vs_reference": 0.9087109565734863,
+      "dino_image_cosine_vs_reference": 0.8990647792816162,
+      "dino_l2_vs_reference": 0.4492999315261841
+    },
+    {
+      "label": "p1_cliff_s4_512_001",
+      "image": "out\\benchmarks\\p1_cliff_s4_512_001\\p1_cliff_s4_512_001_00001_.png",
+      "pixel_mae_rgb": 0.0637153685092926,
+      "pixel_rmse_rgb": 0.1029408648610115,
+      "pixel_max_abs_rgb": 1.0,
+      "neighbor_gradient_mean": 0.0020060173701494932,
+      "laplacian_mean_abs": 0.011023850180208683,
+      "clip_prompt_alignment": 0.3082234263420105,
+      "clip_image_cosine_vs_reference": 0.9108501076698303,
+      "dino_image_cosine_vs_reference": 0.9117408394813538,
+      "dino_l2_vs_reference": 0.42014080286026
+    },
+    {
+      "label": "p1_cliff_s3_512_001",
+      "image": "out\\benchmarks\\p1_cliff_s3_512_001\\p1_cliff_s3_512_001_00001_.png",
+      "pixel_mae_rgb": 0.06363525241613388,
+      "pixel_rmse_rgb": 0.10247190296649933,
+      "pixel_max_abs_rgb": 0.9529411792755127,
+      "neighbor_gradient_mean": 0.0018971475074067712,
+      "laplacian_mean_abs": 0.010588735342025757,
+      "clip_prompt_alignment": 0.30979466438293457,
+      "clip_image_cosine_vs_reference": 0.9150335788726807,
+      "dino_image_cosine_vs_reference": 0.9231770634651184,
+      "dino_l2_vs_reference": 0.39197707176208496
+    },
+    {
+      "label": "p1_cliff_s2_512_001",
+      "image": "out\\benchmarks\\p1_cliff_s2_512_001\\p1_cliff_s2_512_001_00001_.png",
+      "pixel_mae_rgb": 0.060947153717279434,
+      "pixel_rmse_rgb": 0.09437295794487,
+      "pixel_max_abs_rgb": 0.9764705896377563,
+      "neighbor_gradient_mean": 0.0007295035175047815,
+      "laplacian_mean_abs": 0.006678038742393255,
+      "clip_prompt_alignment": 0.3082596957683563,
+      "clip_image_cosine_vs_reference": 0.8596571087837219,
+      "dino_image_cosine_vs_reference": 0.6032018065452576,
+      "dino_l2_vs_reference": 0.8908402323722839
+    },
+    {
+      "label": "p1_cliff_s1_512_001",
+      "image": "out\\benchmarks\\p1_cliff_s1_512_001\\p1_cliff_s1_512_001_00001_.png",
+      "pixel_mae_rgb": 0.06264451146125793,
+      "pixel_rmse_rgb": 0.09594063460826874,
+      "pixel_max_abs_rgb": 0.9843137264251709,
+      "neighbor_gradient_mean": 0.0005422080866992474,
+      "laplacian_mean_abs": 0.004676374606788158,
+      "clip_prompt_alignment": 0.2522180676460266,
+      "clip_image_cosine_vs_reference": 0.7630014419555664,
+      "dino_image_cosine_vs_reference": 0.3991605043411255,
+      "dino_l2_vs_reference": 1.0962111949920654
+    }
+  ]
+}

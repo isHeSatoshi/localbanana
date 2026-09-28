@@ -1,0 +1,99 @@
+{
+  "reference": "out\\benchmarks\\quality_v021_p1_r256_6_512_000\\quality_v021_p1_r256_6_512_000_00001_.png",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "clip_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dino_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--facebook--dinov2-base\\snapshots\\f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "candidates": [
+    {
+      "label": "p2b_grid_b065_512_000",
+      "image": "out\\benchmarks\\p2b_grid_b065_512_000\\p2b_grid_b065_512_000_00001_.png",
+      "pixel_mae_rgb": 0.026262903586030006,
+      "pixel_rmse_rgb": 0.062180470675230026,
+      "pixel_max_abs_rgb": 0.9490196108818054,
+      "neighbor_gradient_mean": 0.0008571213111281395,
+      "laplacian_mean_abs": 0.008644398301839828,
+      "clip_prompt_alignment": 0.2884635031223297,
+      "clip_image_cosine_vs_reference": 0.8589377999305725,
+      "dino_image_cosine_vs_reference": 0.7843634486198425,
+      "dino_l2_vs_reference": 0.6567139625549316
+    },
+    {
+      "label": "p2b_grid_b072_512_000",
+      "image": "out\\benchmarks\\p2b_grid_b072_512_000\\p2b_grid_b072_512_000_00001_.png",
+      "pixel_mae_rgb": 0.023726115003228188,
+      "pixel_rmse_rgb": 0.058139655739068985,
+      "pixel_max_abs_rgb": 0.9411764740943909,
+      "neighbor_gradient_mean": 0.0009730669553391635,
+      "laplacian_mean_abs": 0.008797893300652504,
+      "clip_prompt_alignment": 0.2919255495071411,
+      "clip_image_cosine_vs_reference": 0.8728079795837402,
+      "dino_image_cosine_vs_reference": 0.7826573252677917,
+      "dino_l2_vs_reference": 0.6593067049980164
+    },
+    {
+      "label": "p2b_grid_b075_512_000",
+      "image": "out\\benchmarks\\p2b_grid_b075_512_000\\p2b_grid_b075_512_000_00001_.png",
+      "pixel_mae_rgb": 0.0238784309476614,
+      "pixel_rmse_rgb": 0.05786839500069618,
+      "pixel_max_abs_rgb": 0.9529411792755127,
+      "neighbor_gradient_mean": 0.0010574528714641929,
+      "laplacian_mean_abs": 0.009242761880159378,
+      "clip_prompt_alignment": 0.29858464002609253,
+      "clip_image_cosine_vs_reference": 0.8899522423744202,
+      "dino_image_cosine_vs_reference": 0.8126806020736694,
+      "dino_l2_vs_reference": 0.6120773553848267
+    },
+    {
+      "label": "p2b_grid_b078_512_000",
+      "image": "out\\benchmarks\\p2b_grid_b078_512_000\\p2b_grid_b078_512_000_00001_.png",
+      "pixel_mae_rgb": 0.024029390886425972,
+      "pixel_rmse_rgb": 0.05767355114221573,
+      "pixel_max_abs_rgb": 0.9647058844566345,
+      "neighbor_gradient_mean": 0.001132804318331182,
+      "laplacian_mean_abs": 0.009496395476162434,
+      "clip_prompt_alignment": 0.3069990277290344,
+      "clip_image_cosine_vs_reference": 0.9103935956954956,
+      "dino_image_cosine_vs_reference": 0.8472345471382141,
+      "dino_l2_vs_reference": 0.5527485013008118
+    },
+    {
+      "label": "p2b_grid_b080_512_000",
+      "image": "out\\benchmarks\\p2b_grid_b080_512_000\\p2b_grid_b080_512_000_00001_.png",
+      "pixel_mae_rgb": 0.023392684757709503,
+      "pixel_rmse_rgb": 0.05580795928835869,
+      "pixel_max_abs_rgb": 0.9607843160629272,
+      "neighbor_gradient_mean": 0.0011565214954316616,
+      "laplacian_mean_abs": 0.009937374852597713,
+      "clip_prompt_alignment": 0.30778104066848755,
+      "clip_image_cosine_vs_reference": 0.9142373204231262,
+      "dino_image_cosine_vs_reference": 0.8219233751296997,
+      "dino_l2_vs_reference": 0.5967857837677002
+    },
+    {
+      "label": "p2b_grid_b085_512_000",
+      "image": "out\\benchmarks\\p2b_grid_b085_512_000\\p2b_grid_b085_512_000_00001_.png",
+      "pixel_mae_rgb": 0.01936613954603672,
+      "pixel_rmse_rgb": 0.053187064826488495,
+      "pixel_max_abs_rgb": 0.9647058844566345,
+      "neighbor_gradient_mean": 0.0011132633080706,
+      "laplacian_mean_abs": 0.010655355639755726,
+      "clip_prompt_alignment": 0.3006111681461334,
+      "clip_image_cosine_vs_reference": 0.9013563394546509,
+      "dino_image_cosine_vs_reference": 0.7930389046669006,
+      "dino_l2_vs_reference": 0.6433678865432739
+    },
+    {
+      "label": "p2b_grid_b090_512_000",
+      "image": "out\\benchmarks\\p2b_grid_b090_512_000\\p2b_grid_b090_512_000_00001_.png",
+      "pixel_mae_rgb": 0.017737865447998047,
+      "pixel_rmse_rgb": 0.05071919783949852,
+      "pixel_max_abs_rgb": 0.9803921580314636,
+      "neighbor_gradient_mean": 0.0012097115395590663,
+      "laplacian_mean_abs": 0.010380996391177177,
+      "clip_prompt_alignment": 0.2876526117324829,
+      "clip_image_cosine_vs_reference": 0.8693540096282959,
+      "dino_image_cosine_vs_reference": 0.775127112865448,
+      "dino_l2_vs_reference": 0.670630931854248
+    }
+  ]
+}

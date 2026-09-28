@@ -1,0 +1,65 @@
+{
+  "mode": "gradient_only",
+  "manifest": "D:\\Project\\1secimage\\results\\qwen21_teacher_probe.json",
+  "dit": "H:\\1secimage\\models\\comfy-qwen21\\diffusion_models\\qwen_image_2.1_int8_convrot.safetensors",
+  "teacher_lora": "H:\\1secimage\\models\\comfy-qwen21\\loras\\Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+  "rank": 1,
+  "targets": "output",
+  "learning_rate": 0.0001,
+  "requested_steps": 1,
+  "sync_offload": true,
+  "correction_modules": 32,
+  "checkpoint_depth": 2,
+  "checkpoint_modules": 32,
+  "gradient_after_clear": {
+    "tensors": 64,
+    "l2": 0.016973726204469252,
+    "max_abs": 0.00058746337890625,
+    "nonfinite_values": 0
+  },
+  "cuda_peak_allocated_mib": 1121.41796875,
+  "cuda_peak_reserved_mib": 1230.0,
+  "total_elapsed_seconds": 15.994551199954003,
+  "output_lora": null,
+  "records": [
+    {
+      "index": 0,
+      "sample_id": "teacher_probe_000_seed42",
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "seed": 42,
+      "objective": {
+        "state_loss": 0.34745267033576965,
+        "final_loss": 0.18550324440002441,
+        "total_loss": 0.5329558849334717,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.016973726204469252,
+        "gradient_max_abs": 0.00058746337890625,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.7.attn.to_out.0.lora_up.weight",
+          "l2": 0.007462650109219797,
+          "max_abs": 0.00058746337890625
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.01696121308878278,
+          "max_abs": 0.00058746337890625,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.07667401432991028,
+          "state_target_std": 1.52212655544281,
+          "state_pred_mean": -0.06908437609672546,
+          "state_pred_std": 1.0527453422546387,
+          "final_target_mean": -0.07446259260177612,
+          "final_target_std": 1.3900208473205566,
+          "final_pred_mean": -0.09415033459663391,
+          "final_pred_std": 1.4774527549743652
+        },
+        "elapsed_seconds": 8.691422600008082
+      },
+      "elapsed_seconds": 15.842800199985504
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "prompt": "A premium futuristic AI image-generation emblem designed as a Telegram bot profile picture, centered composition, a sleek abstract letter \"R\" formed from flowing luminous light and tiny digital particles, subtle neural-network geometry and generative-art patterns surrounding it, cinematic sci-fi aesthetic, deep black background, electric cyan and violet highlights, glossy glass-metal details, professional technology logo, sharp details, dramatic studio lighting, perfectly centered, square composition, no watermark",
+  "clip_prompt_cosine_cu128": 0.35108324885368347,
+  "clip_prompt_cosine_cu130": 0.3510397970676422,
+  "clip_prompt_delta": -4.3451786041259766e-05,
+  "clip_image_cosine": 0.9977418780326843,
+  "dino_image_cosine": 0.9938157796859741,
+  "dino_image_distance": 0.1112140342593193
+}

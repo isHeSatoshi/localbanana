@@ -1,0 +1,45 @@
+{
+  "source": "results\\sweep_p3b_floor.json",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "n_points": 6,
+  "denoise_model": "denoise(N) = a + (N-1)*c",
+  "a_first_call_seconds": 0.36541218984694707,
+  "c_marginal_step_seconds": 0.14338701793125697,
+  "first_call_surcharge_seconds": 0.2220251719156901,
+  "non_denoise_fixed_seconds": 0.7798622846603394,
+  "stage_mean_seconds": {
+    "TextEncodeQwenImage21": 0.4830147822697957,
+    "BasicGuider": 0.0004999240239461263,
+    "VAEDecode": 0.27351423104604083,
+    "SaveImage": 0.02283334732055664
+  },
+  "fit_residuals_seconds": [
+    -0.010401441937401168,
+    -0.007323396773565305,
+    0.018381286802745977,
+    0.004529943920317248,
+    0.01709704853239513,
+    -0.022283440544491606
+  ],
+  "max_abs_residual_seconds": 0.022283440544491606,
+  "predicted_total_seconds": {
+    "1": 1.1452744745072865,
+    "2": 1.2886614924385436,
+    "3": 1.4320485103698004,
+    "4": 1.5754355283010573,
+    "5": 1.7188225462323143,
+    "6": 1.8622095641635714,
+    "7": 2.005596582094828,
+    "8": 2.148983600026085
+  },
+  "measured_total_seconds": {
+    "1": 1.1176955000000817,
+    "2": 1.274612100000013,
+    "3": 1.44598649999989,
+    "4": 1.5963397999994413,
+    "5": 1.7719063000004098,
+    "6": 1.8404530999996496
+  },
+  "one_step_seconds_predicted": 1.1452744745072865,
+  "zero_denoise_floor_seconds": 0.7798622846603394
+}

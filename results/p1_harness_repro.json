@@ -1,0 +1,21 @@
+{
+  "reference": "out\\benchmarks\\quality_v021_p1_r128_6_512_000\\quality_v021_p1_r128_6_512_000_00001_.png",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "clip_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dino_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--facebook--dinov2-base\\snapshots\\f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "candidates": [
+    {
+      "label": "p1_cliff_s6_512_001",
+      "image": "out\\benchmarks\\p1_cliff_s6_512_001\\p1_cliff_s6_512_001_00001_.png",
+      "pixel_mae_rgb": 0.07451213151216507,
+      "pixel_rmse_rgb": 0.11128991842269897,
+      "pixel_max_abs_rgb": 0.9647058844566345,
+      "neighbor_gradient_mean": 0.0021924313623458147,
+      "laplacian_mean_abs": 0.010829944163560867,
+      "clip_prompt_alignment": 0.2996353507041931,
+      "clip_image_cosine_vs_reference": 0.8865130543708801,
+      "dino_image_cosine_vs_reference": 0.862129271030426,
+      "dino_l2_vs_reference": 0.5251109600067139
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "tag": "regress_accepted_512",
+  "base_url": "http://127.0.0.1:8188",
+  "size": 512,
+  "seed": 42,
+  "steps": 6,
+  "teacher_lora": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+  "student_lora": "",
+  "raw_sigmas": [
+    1.0,
+    0.9375,
+    0.875,
+    0.75,
+    0.5,
+    0.25
+  ],
+  "latency_median_s": 1.9789591999724507,
+  "latency_min_s": 1.9789591999724507,
+  "latency_max_s": 1.9789591999724507,
+  "warmup_runs": 1,
+  "measured_runs": 1,
+  "total_elapsed_seconds": 4.393106899980921,
+  "records": [
+    {
+      "index": 0,
+      "sample_id": "regress_accepted_512_000_seed42",
+      "prompt": "A premium futuristic AI image-generation emblem designed as a Telegram bot profile picture, centered composition, a sleek abstract letter R formed from flowing luminous light and tiny digital particles, subtle neural-network geometry and generative-art patterns surrounding it, cinematic sci-fi aesthetic, deep black background, electric cyan and violet highlights, glossy glass-metal details, professional technology logo, sharp details, dramatic studio lighting, perfectly centered, square composition, no watermark Variation marker 0.",
+      "seed": 42,
+      "elapsed_seconds": 2.4019902999862097,
+      "raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "image": "D:\\Project\\1secimage\\out\\research\\student_eval\\regress_accepted_512\\regress_accepted_512_000_seed42_00001_.png",
+      "source": "D:\\Project\\1secimage\\out\\comfy\\research\\student_eval\\regress_accepted_512\\regress_accepted_512_000_seed42_00001_.png",
+      "filename_prefix": "research/student_eval/regress_accepted_512/regress_accepted_512_000_seed42",
+      "warmup": true
+    },
+    {
+      "index": 1,
+      "sample_id": "regress_accepted_512_001_seed42",
+      "prompt": "A premium futuristic AI image-generation emblem designed as a Telegram bot profile picture, centered composition, a sleek abstract letter R formed from flowing luminous light and tiny digital particles, subtle neural-network geometry and generative-art patterns surrounding it, cinematic sci-fi aesthetic, deep black background, electric cyan and violet highlights, glossy glass-metal details, professional technology logo, sharp details, dramatic studio lighting, perfectly centered, square composition, no watermark Variation marker 1.",
+      "seed": 42,
+      "elapsed_seconds": 1.9789591999724507,
+      "raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "image": "D:\\Project\\1secimage\\out\\research\\student_eval\\regress_accepted_512\\regress_accepted_512_001_seed42_00001_.png",
+      "source": "D:\\Project\\1secimage\\out\\comfy\\research\\student_eval\\regress_accepted_512\\regress_accepted_512_001_seed42_00001_.png",
+      "filename_prefix": "research/student_eval/regress_accepted_512/regress_accepted_512_001_seed42",
+      "warmup": false
+    }
+  ]
+}

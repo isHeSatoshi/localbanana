@@ -1,0 +1,16 @@
+{
+  "prompt": "A blue glass sphere in a studio",
+  "seed": 42,
+  "path": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306707_f9fa70c1_00001_.png",
+  "details": {
+    "profile": "v0.2 5-step Turbo r256 test",
+    "resolution": 1024,
+    "seed": 42,
+    "prompt_id": "e1328908-e229-48f8-afb4-f8b26940cf66",
+    "execution_seconds": 6.866,
+    "api_seconds": 7.011992600018857,
+    "output_file": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306707_f9fa70c1_00001_.png",
+    "lora": "Qwen-Image-2.1-viggle-turbo-v0.2-5step-lora-r256.safetensors",
+    "output_metadata": "{\n  \"filename\": \"1024_1790306707_f9fa70c1_00001_.png\",\n  \"subfolder\": \"dashboard\",\n  \"type\": \"output\"\n}"
+  }
+}

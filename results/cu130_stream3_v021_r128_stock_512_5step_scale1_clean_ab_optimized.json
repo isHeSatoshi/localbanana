@@ -1,0 +1,322 @@
+[
+  {
+    "prompt_id": "f5a3ae1a-74ff-489e-bec8-cd69dc98c71b",
+    "elapsed_seconds": 2.1561769999971148,
+    "size": 512,
+    "seed": 314159,
+    "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+    "schedule": "v02_5step",
+    "raw_sigmas": [
+      1.0,
+      0.875,
+      0.75,
+      0.5,
+      0.25
+    ],
+    "effective_sigmas": [
+      1.0,
+      0.9230565544529384,
+      0.8371702074278128,
+      0.6315122047992724,
+      0.3635699938957204,
+      0.0
+    ],
+    "models": {
+      "dit": "qwen_image_2.1_int8_convrot.safetensors",
+      "dit_loader": "safetensors",
+      "text_encoder": "qwen3vl_8b_int8_convrot.safetensors",
+      "vae": "qwen_image_2.1_vae_bf16.safetensors",
+      "lora": "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+      "lora_strength": 1.0
+    },
+    "settings": {
+      "cache_device": "gpu",
+      "cache_dtype": "default",
+      "positive_only": true,
+      "text_encoder_device": "default",
+      "attention_backend": "default",
+      "sampler": "euler",
+      "cfg": 1.0
+    },
+    "node_durations": {
+      "5": {
+        "class_type": "TextEncodeQwenImage21",
+        "seconds": 0.8280665874481201
+      },
+      "9": {
+        "class_type": "BasicGuider",
+        "seconds": 0.0010025501251220703
+      },
+      "10": {
+        "class_type": "RandomNoise",
+        "seconds": 0.000499725341796875
+      },
+      "11": {
+        "class_type": "SamplerCustomAdvanced",
+        "seconds": 0.9973611831665039
+      },
+      "12": {
+        "class_type": "VAEDecode",
+        "seconds": 0.2996032238006592
+      },
+      "13": {
+        "class_type": "SaveImage",
+        "seconds": 0.021042823791503906
+      }
+    },
+    "sampler_progress": [
+      {
+        "node": "11",
+        "state": "running",
+        "value": 0.0,
+        "max": 1.0,
+        "time": 1790311114.9243574
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 1,
+        "max": 5,
+        "time": 1790311115.3698068
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 3,
+        "max": 5,
+        "time": 1790311115.5706322
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 4,
+        "max": 5,
+        "time": 1790311115.7053673
+      },
+      {
+        "node": "11",
+        "state": "running",
+        "value": 5,
+        "max": 5,
+        "time": 1790311115.8426118
+      },
+      {
+        "node": "11",
+        "state": "finished",
+        "value": 5,
+        "max": 5,
+        "time": 1790311115.9217186
+      }
+    ],
+    "step_intervals": [
+      {
+        "step": 0,
+        "seconds_since_previous_event": 0.0
+      },
+      {
+        "step": 1,
+        "seconds_since_previous_event": 0.4454493522644043
+      },
+      {
+        "step": 3,
+        "seconds_since_previous_event": 0.20082545280456543
+      },
+      {
+        "step": 4,
+        "seconds_since_previous_event": 0.134735107421875
+      },
+      {
+        "step": 5,
+        "seconds_since_previous_event": 0.13724446296691895
+      }
+    ],
+    "outputs": [
+      {
+        "node": "13",
+        "source": "D:\\Project\\1secimage\\out\\comfy\\cu130_stream3_v021_r128_stock_512_5step_scale1_clean_ab_512_000_00001_.png",
+        "copy": "D:\\Project\\1secimage\\out\\benchmarks\\cu130_stream3_v021_r128_stock_512_5step_scale1_clean_ab_512_000\\cu130_stream3_v021_r128_stock_512_5step_scale1_clean_ab_512_000_00001_.png",
+        "filename": "cu130_stream3_v021_r128_stock_512_5step_scale1_clean_ab_512_000_00001_.png",
+        "subfolder": ""
+      }
+    ],
+    "history_status": {
+      "status_str": "success",
+      "completed": true,
+      "messages": [
+        [
+          "execution_start",
+          {
+            "prompt_id": "f5a3ae1a-74ff-489e-bec8-cd69dc98c71b",
+            "timestamp": 1790311114091
+          }
+        ],
+        [
+          "execution_cached",
+          {
+            "nodes": [
+              "1",
+              "3",
+              "4",
+              "6",
+              "7",
+              "8",
+              "2",
+              "14"
+            ],
+            "prompt_id": "f5a3ae1a-74ff-489e-bec8-cd69dc98c71b",
+            "timestamp": 1790311114093
+          }
+        ],
+        [
+          "execution_success",
+          {
+            "prompt_id": "f5a3ae1a-74ff-489e-bec8-cd69dc98c71b",
+            "timestamp": 1790311116242
+          }
+        ]
+      ]
+    },
+    "gpu_summary": {
+      "peak_memory_used_mib": 15575.0,
+      "minimum_memory_free_mib": 533.0,
+      "maximum_utilization_percent": 100.0,
+      "mean_power_watts": 51.87307692307692,
+      "maximum_power_watts": 126.44,
+      "maximum_temperature_c": 63.0,
+      "minimum_sm_clock_mhz": 210.0,
+      "sample_count": 13
+    },
+    "gpu_samples": [
+      {
+        "time": 1790311114.1564188,
+        "memory.used": 14729.0,
+        "memory.free": 1379.0,
+        "utilization.gpu": 0.0,
+        "power.draw": 6.6,
+        "temperature.gpu": 45.0,
+        "clocks.current.sm": 210.0
+      },
+      {
+        "time": 1790311114.3554018,
+        "memory.used": 15273.0,
+        "memory.free": 835.0,
+        "utilization.gpu": 0.0,
+        "power.draw": 6.6,
+        "temperature.gpu": 45.0,
+        "clocks.current.sm": 210.0
+      },
+      {
+        "time": 1790311114.529858,
+        "memory.used": 15529.0,
+        "memory.free": 579.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 7.97,
+        "temperature.gpu": 46.0,
+        "clocks.current.sm": 2610.0
+      },
+      {
+        "time": 1790311114.6973896,
+        "memory.used": 15561.0,
+        "memory.free": 547.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 7.97,
+        "temperature.gpu": 46.0,
+        "clocks.current.sm": 2610.0
+      },
+      {
+        "time": 1790311114.8792868,
+        "memory.used": 15567.0,
+        "memory.free": 541.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 7.97,
+        "temperature.gpu": 46.0,
+        "clocks.current.sm": 2610.0
+      },
+      {
+        "time": 1790311115.0601933,
+        "memory.used": 15463.0,
+        "memory.free": 645.0,
+        "utilization.gpu": 48.0,
+        "power.draw": 42.84,
+        "temperature.gpu": 49.0,
+        "clocks.current.sm": 2805.0
+      },
+      {
+        "time": 1790311115.2270188,
+        "memory.used": 15575.0,
+        "memory.free": 533.0,
+        "utilization.gpu": 48.0,
+        "power.draw": 42.84,
+        "temperature.gpu": 49.0,
+        "clocks.current.sm": 2805.0
+      },
+      {
+        "time": 1790311115.3988612,
+        "memory.used": 15447.0,
+        "memory.free": 661.0,
+        "utilization.gpu": 48.0,
+        "power.draw": 42.84,
+        "temperature.gpu": 49.0,
+        "clocks.current.sm": 2805.0
+      },
+      {
+        "time": 1790311115.5691333,
+        "memory.used": 15447.0,
+        "memory.free": 661.0,
+        "utilization.gpu": 87.0,
+        "power.draw": 85.28,
+        "temperature.gpu": 63.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790311115.7424388,
+        "memory.used": 15447.0,
+        "memory.free": 661.0,
+        "utilization.gpu": 87.0,
+        "power.draw": 85.28,
+        "temperature.gpu": 63.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790311115.9207187,
+        "memory.used": 15447.0,
+        "memory.free": 661.0,
+        "utilization.gpu": 87.0,
+        "power.draw": 85.28,
+        "temperature.gpu": 63.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790311116.0851555,
+        "memory.used": 15471.0,
+        "memory.free": 637.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 126.44,
+        "temperature.gpu": 55.0,
+        "clocks.current.sm": 2790.0
+      },
+      {
+        "time": 1790311116.254374,
+        "memory.used": 15023.0,
+        "memory.free": 1085.0,
+        "utilization.gpu": 100.0,
+        "power.draw": 126.44,
+        "temperature.gpu": 55.0,
+        "clocks.current.sm": 2790.0
+      }
+    ],
+    "run_index": 0,
+    "warmup": false,
+    "started_at": 1790311114.0862782,
+    "tag": "cu130_stream3_v021_r128_stock_512_5step_scale1_clean_ab",
+    "gpu": {
+      "name": "cuda:0 NVIDIA GeForce RTX 4060 Ti : cudaMallocAsync",
+      "type": "cuda",
+      "index": 0,
+      "vram_total": 17175150592,
+      "vram_free": 1184244652,
+      "torch_vram_total": 33554432,
+      "torch_vram_free": 23733164
+    }
+  }
+]

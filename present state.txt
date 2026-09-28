@@ -1,0 +1,166 @@
+This was work done by previous agent.already a owrkin verison exist sbut this is autoreserach goal novel breakthrough task. This was what i needed and gav eto anotehr gaent:
+The biggest insight for your 1-second project
+
+There are actually two separate optimization problems:
+
+Viggle solved:
+
+"How do I turn a 40-step diffusion trajectory into 4–6 steps without completely destroying quality?"
+
+You are solving:
+
+"How do I execute those 4–6 huge transformer evaluations insanely efficiently on a 16GB RTX 4060 Ti?"
+
+And there's a potentially much more ambitious third problem:
+
+Your future research:
+
+"Can we distill Viggle's already-distilled student from 4/6 steps down to 2 or 1 while preserving Qwen quality?"
+
+That is where you could start moving from engineering integration into genuinely new model research.
+
+Because the stack becomes:
+
+40-step Qwen teacher
+       ↓
+6-step Viggle student
+       ↓
+2-step student
+       ↓
+1-step student
+       ↓
+optimized INT8 runtime
+       ↓
+RTX 4060 Ti
+       ↓
+~1 second
+
+And that is much closer to your original ambition.
+
+The original DMD paper demonstrated the broader feasibility of pushing diffusion models toward even one-step generation, while Viggle's Qwen work currently demonstrates a practical few-step student.
+
+One especially interesting thing for your project: Viggle's student training consumed only ~19.4k real user requests and ~1,000 student steps on 16×B200 GPUs for the original run. That gives you a much better sense of what they actually did than just saying “they distilled Qwen.”
+CONTINUE BUT WOULD PPARCETAITE I FYOU DID REAL RESEACH WORK NOT JUST engineering optimzation work. you can do this because IT IS pOSSIBLE and you are smart . COntinue. autonooous work continuos
+But agent returned this:
+This was work done by previous agent.already a owrkin verison exist sbut this is autoreserach goal novel breakthrough task. This was what i needed and gav eto anotehr gaent:
+The biggest insight for your 1-second project
+
+There are actually two separate optimization problems:
+
+Viggle solved:
+
+"How do I turn a 40-step diffusion trajectory into 4–6 steps without completely destroying quality?"
+
+You are solving:
+
+"How do I execute those 4–6 huge transformer evaluations insanely efficiently on a 16GB RTX 4060 Ti?"
+
+And there's a potentially much more ambitious third problem:
+
+Your future research:
+
+"Can we distill Viggle's already-distilled student from 4/6 steps down to 2 or 1 while preserving Qwen quality?"
+
+That is where you could start moving from engineering integration into genuinely new model research.
+
+Because the stack becomes:
+
+40-step Qwen teacher
+       ↓
+6-step Viggle student
+       ↓
+2-step student
+       ↓
+1-step student
+       ↓
+optimized INT8 runtime
+       ↓
+RTX 4060 Ti
+       ↓
+~1 second
+
+And that is much closer to your original ambition.
+
+The original DMD paper demonstrated the broader feasibility of pushing diffusion models toward even one-step generation, while Viggle's Qwen work currently demonstrates a practical few-step student.
+
+One especially interesting thing for your project: Viggle's student training consumed only ~19.4k real user requests and ~1,000 student steps on 16×B200 GPUs for the original run. That gives you a much better sense of what they actually did than just saying “they distilled Qwen.”
+CONTINUE BUT WOULD PPARCETAITE I FYOU DID REAL RESEACH WORK NOT JUST engineering optimzation work. you can do this because IT IS pOSSIBLE and you are smart . COntinue. autonooous work continuos
+But agent returned this:
+This was work done by previous agent.already a owrkin verison exist sbut this is autoreserach goal novel breakthrough task. This was what i needed and gav eto anotehr gaent:
+The biggest insight for your 1-second project
+
+There are actually two separate optimization problems:
+
+Viggle solved:
+
+"How do I turn a 40-step diffusion trajectory into 4–6 steps without completely destroying quality?"
+
+You are solving:
+
+"How do I execute those 4–6 huge transformer evaluations insanely efficiently on a 16GB RTX 4060 Ti?"
+
+And there's a potentially much more ambitious third problem:
+
+Your future research:
+
+"Can we distill Viggle's already-distilled student from 4/6 steps down to 2 or 1 while preserving Qwen quality?"
+
+That is where you could start moving from engineering integration into genuinely new model research.
+
+Because the stack becomes:
+
+40-step Qwen teacher
+       ↓
+6-step Viggle student
+       ↓
+2-step student
+       ↓
+1-step student
+       ↓
+optimized INT8 runtime
+       ↓
+RTX 4060 Ti
+       ↓
+~1 second
+
+And that is much closer to your original ambition.
+
+The original DMD paper demonstrated the broader feasibility of pushing diffusion models toward even one-step generation, while Viggle's Qwen work currently demonstrates a practical few-step student.
+
+One especially interesting thing for your project: Viggle's student training consumed only ~19.4k real user requests and ~1,000 student steps on 16×B200 GPUs for the original run. That gives you a much better sense of what they actually did than just saying “they distilled Qwen.”
+CONTINUE BUT WOULD PPARCETAITE I FYOU DID REAL RESEACH WORK NOT JUST engineering optimzation work. you can do this because IT IS pOSSIBLE and you are smart . COntinue. autonooous work continuos
+But agent returned this:
+Outcome
+
+I built a genuine two-step Qwen-Image-2.1 student, measured it end to end, and it failed the quality gate. Speed is solved; quality is not.
+
+The candidate
+
+Exported 8 exact six-step teacher trajectories (pre-final state + final denoised latent + conditioning) from the accepted INT8 stack.
+Trained a rank-1 correction on the 32 attention output projections, regressing the first student Euler state and the final denoised latent.
+The two-step schedule runs at 1.445 s untrained and 1.407 s trained, versus 1.891 s for the accepted five-step and 2.086 s for six-step. That 0.44 s win is real.
+
+Why it was rejected
+
+Against the locked six-step reference: trained DINO cosine 0.5216, CLIP cosine 0.8433. Untrained two-step: 0.5183 / 0.8491. The trained student is slightly worse than no training.
+24 updates at LR 4e-4 left holdout loss flat (0.46706→0.46405, 0.76459→0.76571). This is not an under-trained run.
+The adapter's effective weight delta was only ~7.7% of the teacher's, too small to move anything.
+
+The binding constraint is objective capacity and data, not steps, rank, or learning rate. Accepted five-step and six-step profiles remain production.
+
+Two real ComfyUI defects found and fixed (both training-only, guarded by in_training):
+
+_gated_residual mutated the hidden state in place across all 32 blocks, which made checkpointed gradients silently wrong at ~1e17.
+cast_bias_weight handed out views into a reusable async cast buffer that later blocks overwrote before backward read a saved RMSNorm weight.
+
+Verified inference-neutral by control: a run on clean code and a run with both fixes are pixel-identical (MAE 0.0). The 0.0151 MAE against the stored accepted image reproduces with and without my edits, so it is pre-existing nondeterminism, not a regression.
+
+One methodological correction worth noting: my first latency run reported a false 0.06 s because the classic graph cache returned identical nodes. I now always vary the prompt per run, matching the accepted harness.
+
+Findings are recorded in 
+autoresearch.md
+, 
+autoresearch.ideas.md
+, and 
+autoresearch.jsonl
+ (runs 45–47). The next candidate must change the objective, not the step count.

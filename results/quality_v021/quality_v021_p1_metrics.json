@@ -1,0 +1,62 @@
+{
+  "reference": "r256_6",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "source": "first real execution in each benchmark result",
+  "candidates": {
+    "r128_4": {
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r128_4_512_000\\quality_v021_p1_r128_4_512_000_00001_.png",
+      "pixel_mae_rgb": 0.022578826174139977,
+      "pixel_rmse_rgb": 0.05386853590607643,
+      "clip_prompt_alignment": 0.34430617094039917,
+      "clip_image_cosine_vs_reference": 0.9838070273399353,
+      "dino_image_cosine_vs_reference": 0.9498757719993591,
+      "dino_l2_vs_reference": 0.3166206479072571,
+      "neighbor_gradient_mean": 0.0036861742846667767,
+      "laplacian_mean_abs": 0.01282300055027008
+    },
+    "r128_5": {
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r128_5_512_000\\quality_v021_p1_r128_5_512_000_00001_.png",
+      "pixel_mae_rgb": 0.0113131208345294,
+      "pixel_rmse_rgb": 0.03585255891084671,
+      "clip_prompt_alignment": 0.33751681447029114,
+      "clip_image_cosine_vs_reference": 0.986656665802002,
+      "dino_image_cosine_vs_reference": 0.9653016328811646,
+      "dino_l2_vs_reference": 0.26343274116516113,
+      "neighbor_gradient_mean": 0.004878322593867779,
+      "laplacian_mean_abs": 0.015803638845682144
+    },
+    "r128_6": {
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r128_6_512_000\\quality_v021_p1_r128_6_512_000_00001_.png",
+      "pixel_mae_rgb": 0.0015496696578338742,
+      "pixel_rmse_rgb": 0.0058697848580777645,
+      "clip_prompt_alignment": 0.3351292908191681,
+      "clip_image_cosine_vs_reference": 0.9995722770690918,
+      "dino_image_cosine_vs_reference": 0.9990341067314148,
+      "dino_l2_vs_reference": 0.04395311698317528,
+      "neighbor_gradient_mean": 0.005593243986368179,
+      "laplacian_mean_abs": 0.018040353432297707
+    },
+    "r256_4": {
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r256_4_512_000\\quality_v021_p1_r256_4_512_000_00001_.png",
+      "pixel_mae_rgb": 0.02302737347781658,
+      "pixel_rmse_rgb": 0.05438162386417389,
+      "clip_prompt_alignment": 0.3435296416282654,
+      "clip_image_cosine_vs_reference": 0.9826132655143738,
+      "dino_image_cosine_vs_reference": 0.955801248550415,
+      "dino_l2_vs_reference": 0.2973174452781677,
+      "neighbor_gradient_mean": 0.003680239897221327,
+      "laplacian_mean_abs": 0.012767397798597813
+    },
+    "r256_6": {
+      "image": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r256_6_512_000\\quality_v021_p1_r256_6_512_000_00001_.png",
+      "pixel_mae_rgb": 0.0,
+      "pixel_rmse_rgb": 0.0,
+      "clip_prompt_alignment": 0.33640289306640625,
+      "clip_image_cosine_vs_reference": 1.000000238418579,
+      "dino_image_cosine_vs_reference": 1.0,
+      "dino_l2_vs_reference": 0.0,
+      "neighbor_gradient_mean": 0.005608714185655117,
+      "laplacian_mean_abs": 0.01806400716304779
+    }
+  }
+}

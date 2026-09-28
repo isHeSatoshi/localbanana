@@ -1,0 +1,33 @@
+NOTICE
+======
+
+Qwen is licensed under the Qwen RESEARCH LICENSE AGREEMENT, Copyright (c) 2026
+Hangzhou Tongyi Laboratory Technology Co., Ltd. All Rights Reserved.
+
+Built with Qwen.
+
+This project is a local inference and measurement harness for Qwen-Image-2.1. It does not
+redistribute any Qwen model weights. The weights are obtained directly from Hugging Face by
+the user, under the Qwen RESEARCH LICENSE AGREEMENT, which permits use, modification, and
+redistribution for non-commercial purposes only. "Non-Commercial" is defined in that
+agreement as research or evaluation purposes only. Commercial use requires a separate
+license from Qwen; the agreement gives the contact as model-business@notice.qwencloud.com.
+
+Full agreement: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
+
+
+Third-party components
+----------------------
+
+ComfyUI
+  Copyright (c) Comfy Org and contributors.
+  Licensed under the GNU General Public License v3.0.
+  This repository contains derivative work of ComfyUI (two training-path patches, described
+  in COMFYUI_PATCHES.md) and is therefore distributed under GPL-3.0 as a whole. ComfyUI is
+  not vendored in this repository; the patches are meant to be applied to your own checkout.
+  https://github.com/comfyanonymous/ComfyUI
+
+Viggle Qwen-Image-2.1 Turbo adapter
+  Copyright (c) Viggle. Distributed under the Qwen RESEARCH LICENSE AGREEMENT.
+  Third-party artifact, not covered by this repository's GPL-3.0 grant.
+  https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo

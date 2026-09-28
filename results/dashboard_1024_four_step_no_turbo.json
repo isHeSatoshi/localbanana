@@ -1,0 +1,16 @@
+{
+  "prompt": "A blue glass sphere in a studio",
+  "seed": 42,
+  "path": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306773_b00e0450_00001_.png",
+  "details": {
+    "profile": "4-step no-Turbo control",
+    "resolution": 1024,
+    "seed": 42,
+    "prompt_id": "184333df-c453-4e26-b0df-f2fa89a5c6cd",
+    "execution_seconds": 5.576,
+    "api_seconds": 5.773633700009668,
+    "output_file": "D:\\Project\\1secimage\\out\\comfy\\dashboard\\1024_1790306773_b00e0450_00001_.png",
+    "lora": null,
+    "output_metadata": "{\n  \"filename\": \"1024_1790306773_b00e0450_00001_.png\",\n  \"subfolder\": \"dashboard\",\n  \"type\": \"output\"\n}"
+  }
+}

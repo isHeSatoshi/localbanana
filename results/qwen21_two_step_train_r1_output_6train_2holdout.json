@@ -1,0 +1,985 @@
+{
+  "mode": "train",
+  "manifest": "D:\\Project\\1secimage\\results\\qwen21_teacher_trajectories.json",
+  "dit": "H:\\1secimage\\models\\comfy-qwen21\\diffusion_models\\qwen_image_2.1_int8_convrot.safetensors",
+  "teacher_lora": "H:\\1secimage\\models\\comfy-qwen21\\loras\\Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors",
+  "rank": 1,
+  "targets": "output",
+  "learning_rate": 0.0004,
+  "requested_steps": 2,
+  "epochs": 4,
+  "train_records": 6,
+  "holdout_records": 2,
+  "sync_offload": true,
+  "correction_modules": 32,
+  "checkpoint_depth": 2,
+  "checkpoint_modules": 32,
+  "gradient_after_clear": {
+    "tensors": 64,
+    "l2": 0.0,
+    "max_abs": 0.0,
+    "nonfinite_values": 0
+  },
+  "cuda_peak_allocated_mib": 1124.5361328125,
+  "cuda_peak_reserved_mib": 1230.0,
+  "total_elapsed_seconds": 193.78833070001565,
+  "output_lora": "D:\\Project\\1secimage\\out\\research\\qwen21_two_step\\qwen21_two_step_r1_2step.safetensors",
+  "records": [
+    {
+      "index": 0,
+      "sample_id": "fixed_p1_000_seed42",
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "seed": 42,
+      "objective": {
+        "state_loss": 0.34745267033576965,
+        "final_loss": 0.18550324440002441,
+        "total_loss": 0.5329558849334717,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.01719962289715373,
+        "gradient_max_abs": 0.00054168701171875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.2.attn.to_out.0.lora_up.weight",
+          "l2": 0.007106414455779087,
+          "max_abs": 0.00054168701171875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.01717124205833034,
+          "max_abs": 0.00054168701171875,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.07667401432991028,
+          "state_target_std": 1.52212655544281,
+          "state_pred_mean": -0.06908437609672546,
+          "state_pred_std": 1.0527453422546387,
+          "final_target_mean": -0.07446259260177612,
+          "final_target_std": 1.3900208473205566,
+          "final_pred_mean": -0.09415033459663391,
+          "final_pred_std": 1.4774527549743652
+        },
+        "elapsed_seconds": 8.807852199999616
+      },
+      "elapsed_seconds": 15.12212300003739
+    },
+    {
+      "index": 1,
+      "sample_id": "fixed_p1_001_seed43",
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "seed": 43,
+      "objective": {
+        "state_loss": 0.31941860914230347,
+        "final_loss": 0.20019757747650146,
+        "total_loss": 0.5196161866188049,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.00773511623229188,
+        "gradient_max_abs": 0.0002307891845703125,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.0.attn.to_out.0.lora_up.weight",
+          "l2": 0.002839670941375795,
+          "max_abs": 0.0002155303955078125
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.007711961769546145,
+          "max_abs": 0.000232696533203125,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.05845315754413605,
+          "state_target_std": 1.2193833589553833,
+          "state_pred_mean": 0.020860087126493454,
+          "state_pred_std": 0.7784981727600098,
+          "final_target_mean": 0.05730988457798958,
+          "final_target_std": 1.0694986581802368,
+          "final_pred_mean": 0.035728853195905685,
+          "final_pred_std": 1.071455717086792
+        },
+        "elapsed_seconds": 7.158549500047229
+      },
+      "elapsed_seconds": 7.1842992000165395
+    },
+    {
+      "index": 2,
+      "sample_id": "fixed_p1_002_seed44",
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "seed": 44,
+      "objective": {
+        "state_loss": 0.262895405292511,
+        "final_loss": 0.14784559607505798,
+        "total_loss": 0.41074100136756897,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.0032411849058392866,
+        "gradient_max_abs": 0.0001583099365234375,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.0012041272613441082,
+          "max_abs": 0.0001583099365234375
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.0031469860565789564,
+          "max_abs": 0.0001583099365234375,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.055808838456869125,
+          "state_target_std": 1.157089352607727,
+          "state_pred_mean": -0.035779938101768494,
+          "state_pred_std": 0.7492650151252747,
+          "final_target_mean": -0.054105114191770554,
+          "final_target_std": 0.991672933101654,
+          "final_pred_mean": -0.04920836165547371,
+          "final_pred_std": 1.0043128728866577
+        },
+        "elapsed_seconds": 7.199330600036774
+      },
+      "elapsed_seconds": 7.22590920003131
+    },
+    {
+      "index": 3,
+      "sample_id": "fixed_p1_003_seed45",
+      "prompt": "A chef plating handmade noodles in a warm modern kitchen, candid documentary photograph",
+      "seed": 45,
+      "objective": {
+        "state_loss": 0.5368551015853882,
+        "final_loss": 0.4276207387447357,
+        "total_loss": 0.9644758701324463,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.0044633066265843445,
+        "gradient_max_abs": 0.0002040863037109375,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.3.attn.to_out.0.lora_up.weight",
+          "l2": 0.0017375751375765642,
+          "max_abs": 0.00016307830810546875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.0041404270011656105,
+          "max_abs": 0.0001964569091796875,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.0006741180550307035,
+          "state_target_std": 1.214587926864624,
+          "state_pred_mean": -0.014153962954878807,
+          "state_pred_std": 0.6635061502456665,
+          "final_target_mean": 0.0024959612637758255,
+          "final_target_std": 1.0679935216903687,
+          "final_pred_mean": -0.01380667369812727,
+          "final_pred_std": 0.8882046937942505
+        },
+        "elapsed_seconds": 7.159523099951912
+      },
+      "elapsed_seconds": 7.192173599964008
+    },
+    {
+      "index": 4,
+      "sample_id": "fixed_p1_004_seed46",
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "seed": 46,
+      "objective": {
+        "state_loss": 0.4388277530670166,
+        "final_loss": 0.3169251084327698,
+        "total_loss": 0.7557528614997864,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.015864164692554774,
+        "gradient_max_abs": 0.000637054443359375,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.1.attn.to_out.0.lora_up.weight",
+          "l2": 0.005313605454983183,
+          "max_abs": 0.000637054443359375
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.01584466636201821,
+          "max_abs": 0.000637054443359375,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.07849138230085373,
+          "state_target_std": 1.399422287940979,
+          "state_pred_mean": 0.05809369310736656,
+          "state_pred_std": 0.907145082950592,
+          "final_target_mean": 0.07580988109111786,
+          "final_target_std": 1.2641394138336182,
+          "final_pred_mean": 0.09790822863578796,
+          "final_pred_std": 1.2933354377746582
+        },
+        "elapsed_seconds": 7.180569399963133
+      },
+      "elapsed_seconds": 7.213147400005255
+    },
+    {
+      "index": 5,
+      "sample_id": "fixed_p1_005_seed47",
+      "prompt": "A rain-covered neon street in a dense Asian city at night, cinematic photography, reflections",
+      "seed": 47,
+      "objective": {
+        "state_loss": 0.2694673538208008,
+        "final_loss": 0.16063711047172546,
+        "total_loss": 0.43010446429252625,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.009052117546692358,
+        "gradient_max_abs": 0.0003662109375,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.0032058539914725645,
+          "max_abs": 0.0003662109375
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.008915744856507557,
+          "max_abs": 0.0003814697265625,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.03110324963927269,
+          "state_target_std": 1.1490514278411865,
+          "state_pred_mean": -0.014071897603571415,
+          "state_pred_std": 0.7384535670280457,
+          "final_target_mean": -0.030851565301418304,
+          "final_target_std": 0.986084520816803,
+          "final_pred_mean": -0.0198577418923378,
+          "final_pred_std": 1.0037685632705688
+        },
+        "elapsed_seconds": 7.097448999993503
+      },
+      "elapsed_seconds": 7.1301457999506965
+    },
+    {
+      "index": 0,
+      "sample_id": "fixed_p1_000_seed42",
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "seed": 42,
+      "objective": {
+        "state_loss": 0.34657222032546997,
+        "final_loss": 0.18469461798667908,
+        "total_loss": 0.5312668085098267,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.05888790839399613,
+        "gradient_max_abs": 0.0023956298828125,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.6.attn.to_out.0.lora_down.weight",
+          "l2": 0.016068775641388894,
+          "max_abs": 0.0023956298828125
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.0587485981839332,
+          "max_abs": 0.0023956298828125,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.07667401432991028,
+          "state_target_std": 1.52212655544281,
+          "state_pred_mean": -0.06886385381221771,
+          "state_pred_std": 1.0530003309249878,
+          "final_target_mean": -0.07446259260177612,
+          "final_target_std": 1.3900208473205566,
+          "final_pred_mean": -0.09377384185791016,
+          "final_pred_std": 1.4781551361083984
+        },
+        "elapsed_seconds": 7.153645400016103
+      },
+      "elapsed_seconds": 7.185292600013781
+    },
+    {
+      "index": 1,
+      "sample_id": "fixed_p1_001_seed43",
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "seed": 43,
+      "objective": {
+        "state_loss": 0.3194712996482849,
+        "final_loss": 0.20110443234443665,
+        "total_loss": 0.520575761795044,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.016571017459634182,
+        "gradient_max_abs": 0.000621795654296875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.0049413613088150005,
+          "max_abs": 0.000621795654296875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.01644266987668442,
+          "max_abs": 0.000629425048828125,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.05845315754413605,
+          "state_target_std": 1.2193833589553833,
+          "state_pred_mean": 0.020898310467600822,
+          "state_pred_std": 0.7791444063186646,
+          "final_target_mean": 0.05730988457798958,
+          "final_target_std": 1.0694986581802368,
+          "final_pred_mean": 0.035864099860191345,
+          "final_pred_std": 1.0727121829986572
+        },
+        "elapsed_seconds": 7.0926520000211895
+      },
+      "elapsed_seconds": 7.12205060000997
+    },
+    {
+      "index": 2,
+      "sample_id": "fixed_p1_002_seed44",
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "seed": 44,
+      "objective": {
+        "state_loss": 0.263081431388855,
+        "final_loss": 0.14747154712677002,
+        "total_loss": 0.410552978515625,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.010521801950291369,
+        "gradient_max_abs": 0.00066375732421875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.005085284883338123,
+          "max_abs": 0.00064849853515625
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.01035669818698165,
+          "max_abs": 0.000659942626953125,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.055808838456869125,
+          "state_target_std": 1.157089352607727,
+          "state_pred_mean": -0.0356530025601387,
+          "state_pred_std": 0.7487569451332092,
+          "final_target_mean": -0.054105114191770554,
+          "final_target_std": 0.991672933101654,
+          "final_pred_mean": -0.0490100234746933,
+          "final_pred_std": 1.0033814907073975
+        },
+        "elapsed_seconds": 7.094992699974682
+      },
+      "elapsed_seconds": 7.122058600012679
+    },
+    {
+      "index": 3,
+      "sample_id": "fixed_p1_003_seed45",
+      "prompt": "A chef plating handmade noodles in a warm modern kitchen, candid documentary photograph",
+      "seed": 45,
+      "objective": {
+        "state_loss": 0.5360316038131714,
+        "final_loss": 0.4273112118244171,
+        "total_loss": 0.9633427858352661,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.009783445854826638,
+        "gradient_max_abs": 0.000518798828125,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.31.attn.to_out.0.lora_up.weight",
+          "l2": 0.004132172671598742,
+          "max_abs": 0.00049591064453125
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.009253442819571928,
+          "max_abs": 0.0005340576171875,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.0006741180550307035,
+          "state_target_std": 1.214587926864624,
+          "state_pred_mean": -0.014258471317589283,
+          "state_pred_std": 0.6643418073654175,
+          "final_target_mean": 0.0024959612637758255,
+          "final_target_std": 1.0679935216903687,
+          "final_pred_mean": -0.013905331492424011,
+          "final_pred_std": 0.8896096348762512
+        },
+        "elapsed_seconds": 7.0745763999875635
+      },
+      "elapsed_seconds": 7.104656300041825
+    },
+    {
+      "index": 4,
+      "sample_id": "fixed_p1_004_seed46",
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "seed": 46,
+      "objective": {
+        "state_loss": 0.4355589747428894,
+        "final_loss": 0.3153670132160187,
+        "total_loss": 0.7509260177612305,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.0382312744942632,
+        "gradient_max_abs": 0.00118255615234375,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.0.attn.to_out.0.lora_up.weight",
+          "l2": 0.012163816264050093,
+          "max_abs": 0.00091552734375
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.03809667311843237,
+          "max_abs": 0.00121307373046875,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.07849138230085373,
+          "state_target_std": 1.399422287940979,
+          "state_pred_mean": 0.05841610208153725,
+          "state_pred_std": 0.9095174670219421,
+          "final_target_mean": 0.07580988109111786,
+          "final_target_std": 1.2641394138336182,
+          "final_pred_mean": 0.09839510917663574,
+          "final_pred_std": 1.2964236736297607
+        },
+        "elapsed_seconds": 7.075881699973252
+      },
+      "elapsed_seconds": 7.108137200004421
+    },
+    {
+      "index": 5,
+      "sample_id": "fixed_p1_005_seed47",
+      "prompt": "A rain-covered neon street in a dense Asian city at night, cinematic photography, reflections",
+      "seed": 47,
+      "objective": {
+        "state_loss": 0.26809224486351013,
+        "final_loss": 0.15984883904457092,
+        "total_loss": 0.42794108390808105,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.014675679308494463,
+        "gradient_max_abs": 0.000759124755859375,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.006666233149380718,
+          "max_abs": 0.000759124755859375
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.014387701952001663,
+          "max_abs": 0.00078582763671875,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.03110324963927269,
+          "state_target_std": 1.1490514278411865,
+          "state_pred_mean": -0.01436134334653616,
+          "state_pred_std": 0.7394628524780273,
+          "final_target_mean": -0.030851565301418304,
+          "final_target_std": 0.986084520816803,
+          "final_pred_mean": -0.020255254581570625,
+          "final_pred_std": 1.0052015781402588
+        },
+        "elapsed_seconds": 7.088053699990269
+      },
+      "elapsed_seconds": 7.116505599988159
+    },
+    {
+      "index": 0,
+      "sample_id": "fixed_p1_000_seed42",
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "seed": 42,
+      "objective": {
+        "state_loss": 0.3382001519203186,
+        "final_loss": 0.18366792798042297,
+        "total_loss": 0.521868109703064,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.09505290312191397,
+        "gradient_max_abs": 0.0030975341796875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.15.attn.to_out.0.lora_down.weight",
+          "l2": 0.02275416480912102,
+          "max_abs": 0.0030975341796875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.09489575101166564,
+          "max_abs": 0.0030975341796875,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.07667401432991028,
+          "state_target_std": 1.52212655544281,
+          "state_pred_mean": -0.06821294128894806,
+          "state_pred_std": 1.0605586767196655,
+          "final_target_mean": -0.07446259260177612,
+          "final_target_std": 1.3900208473205566,
+          "final_pred_mean": -0.09266297519207001,
+          "final_pred_std": 1.4882947206497192
+        },
+        "elapsed_seconds": 7.076907899987418
+      },
+      "elapsed_seconds": 7.107045799959451
+    },
+    {
+      "index": 1,
+      "sample_id": "fixed_p1_001_seed43",
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "seed": 43,
+      "objective": {
+        "state_loss": 0.31782591342926025,
+        "final_loss": 0.20024985074996948,
+        "total_loss": 0.5180757641792297,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.028926614478505832,
+        "gradient_max_abs": 0.001129150390625,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.1.attn.to_out.0.lora_up.weight",
+          "l2": 0.01015910617490427,
+          "max_abs": 0.000728607177734375
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.028688629419735427,
+          "max_abs": 0.00113677978515625,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.05845315754413605,
+          "state_target_std": 1.2193833589553833,
+          "state_pred_mean": 0.02093590423464775,
+          "state_pred_std": 0.7804791331291199,
+          "final_target_mean": 0.05730988457798958,
+          "final_target_std": 1.0694986581802368,
+          "final_pred_mean": 0.035879310220479965,
+          "final_pred_std": 1.07425057888031
+        },
+        "elapsed_seconds": 7.057780700037256
+      },
+      "elapsed_seconds": 7.084535600035451
+    },
+    {
+      "index": 2,
+      "sample_id": "fixed_p1_002_seed44",
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "seed": 44,
+      "objective": {
+        "state_loss": 0.26132649183273315,
+        "final_loss": 0.1478702425956726,
+        "total_loss": 0.40919673442840576,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.017194615105516117,
+        "gradient_max_abs": 0.00102996826171875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.008089715551407415,
+          "max_abs": 0.00102996826171875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.016921675615556762,
+          "max_abs": 0.00104522705078125,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.055808838456869125,
+          "state_target_std": 1.157089352607727,
+          "state_pred_mean": -0.035839442163705826,
+          "state_pred_std": 0.751226544380188,
+          "final_target_mean": -0.054105114191770554,
+          "final_target_std": 0.991672933101654,
+          "final_pred_mean": -0.04928004369139671,
+          "final_pred_std": 1.0067721605300903
+        },
+        "elapsed_seconds": 7.066945599974133
+      },
+      "elapsed_seconds": 7.094430199998897
+    },
+    {
+      "index": 3,
+      "sample_id": "fixed_p1_003_seed45",
+      "prompt": "A chef plating handmade noodles in a warm modern kitchen, candid documentary photograph",
+      "seed": 45,
+      "objective": {
+        "state_loss": 0.5355887413024902,
+        "final_loss": 0.4279957413673401,
+        "total_loss": 0.9635844826698303,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.016561196944612142,
+        "gradient_max_abs": 0.00078582763671875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.31.attn.to_out.0.lora_down.weight",
+          "l2": 0.006598900547338739,
+          "max_abs": 0.000598907470703125
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.01581544391292222,
+          "max_abs": 0.0008087158203125,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.0006741180550307035,
+          "state_target_std": 1.214587926864624,
+          "state_pred_mean": -0.014438905753195286,
+          "state_pred_std": 0.6652581095695496,
+          "final_target_mean": 0.0024959612637758255,
+          "final_target_std": 1.0679935216903687,
+          "final_pred_mean": -0.014154341071844101,
+          "final_pred_std": 0.8907679915428162
+        },
+        "elapsed_seconds": 7.063021500012837
+      },
+      "elapsed_seconds": 7.095272100006696
+    },
+    {
+      "index": 4,
+      "sample_id": "fixed_p1_004_seed46",
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "seed": 46,
+      "objective": {
+        "state_loss": 0.4293973743915558,
+        "final_loss": 0.31750959157943726,
+        "total_loss": 0.7469069957733154,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.055247007570406674,
+        "gradient_max_abs": 0.00165557861328125,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.0.attn.to_out.0.lora_up.weight",
+          "l2": 0.015961699317161477,
+          "max_abs": 0.00109100341796875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.05499835901388753,
+          "max_abs": 0.00167083740234375,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.07849138230085373,
+          "state_target_std": 1.399422287940979,
+          "state_pred_mean": 0.058081842958927155,
+          "state_pred_std": 0.9171040654182434,
+          "final_target_mean": 0.07580988109111786,
+          "final_target_std": 1.2641394138336182,
+          "final_pred_mean": 0.09791840612888336,
+          "final_pred_std": 1.306949257850647
+        },
+        "elapsed_seconds": 7.064652000030037
+      },
+      "elapsed_seconds": 7.095158999960404
+    },
+    {
+      "index": 5,
+      "sample_id": "fixed_p1_005_seed47",
+      "prompt": "A rain-covered neon street in a dense Asian city at night, cinematic photography, reflections",
+      "seed": 47,
+      "objective": {
+        "state_loss": 0.26637977361679077,
+        "final_loss": 0.16149921715259552,
+        "total_loss": 0.4278789758682251,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.021090609913917743,
+        "gradient_max_abs": 0.00102996826171875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.009132522508444863,
+          "max_abs": 0.00102996826171875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.02066382301610578,
+          "max_abs": 0.001068115234375,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.03110324963927269,
+          "state_target_std": 1.1490514278411865,
+          "state_pred_mean": -0.014465749263763428,
+          "state_pred_std": 0.7429863214492798,
+          "final_target_mean": -0.030851565301418304,
+          "final_target_std": 0.986084520816803,
+          "final_pred_mean": -0.020420238375663757,
+          "final_pred_std": 1.0101358890533447
+        },
+        "elapsed_seconds": 7.071406000002753
+      },
+      "elapsed_seconds": 7.101841100025922
+    },
+    {
+      "index": 0,
+      "sample_id": "fixed_p1_000_seed42",
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "seed": 42,
+      "objective": {
+        "state_loss": 0.31929755210876465,
+        "final_loss": 0.17930413782596588,
+        "total_loss": 0.49860167503356934,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.11826409427083086,
+        "gradient_max_abs": 0.0035400390625,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.15.attn.to_out.0.lora_down.weight",
+          "l2": 0.026178793459388887,
+          "max_abs": 0.0035400390625
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.11813721687323185,
+          "max_abs": 0.0035400390625,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.07667401432991028,
+          "state_target_std": 1.52212655544281,
+          "state_pred_mean": -0.06655693054199219,
+          "state_pred_std": 1.0762763023376465,
+          "final_target_mean": -0.07446259260177612,
+          "final_target_std": 1.3900208473205566,
+          "final_pred_mean": -0.08990012109279633,
+          "final_pred_std": 1.5096454620361328
+        },
+        "elapsed_seconds": 7.139355199993588
+      },
+      "elapsed_seconds": 7.16858370002592
+    },
+    {
+      "index": 1,
+      "sample_id": "fixed_p1_001_seed43",
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "seed": 43,
+      "objective": {
+        "state_loss": 0.31480130553245544,
+        "final_loss": 0.199458509683609,
+        "total_loss": 0.5142598152160645,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.03299168197446336,
+        "gradient_max_abs": 0.0014190673828125,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.011161675414799996,
+          "max_abs": 0.0014190673828125
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.03262615361467923,
+          "max_abs": 0.001434326171875,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.05845315754413605,
+          "state_target_std": 1.2193833589553833,
+          "state_pred_mean": 0.021125122904777527,
+          "state_pred_std": 0.7834126353263855,
+          "final_target_mean": 0.05730988457798958,
+          "final_target_std": 1.0694986581802368,
+          "final_pred_mean": 0.0362616702914238,
+          "final_pred_std": 1.0784902572631836
+        },
+        "elapsed_seconds": 7.066095800022595
+      },
+      "elapsed_seconds": 7.098849000001792
+    },
+    {
+      "index": 2,
+      "sample_id": "fixed_p1_002_seed44",
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "seed": 44,
+      "objective": {
+        "state_loss": 0.25948402285575867,
+        "final_loss": 0.14788773655891418,
+        "total_loss": 0.40737175941467285,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.02602370373092158,
+        "gradient_max_abs": 0.00128936767578125,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.01010548087905047,
+          "max_abs": 0.00128936767578125
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.025744007011667985,
+          "max_abs": 0.00130462646484375,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.055808838456869125,
+          "state_target_std": 1.157089352607727,
+          "state_pred_mean": -0.035663533955812454,
+          "state_pred_std": 0.7534497976303101,
+          "final_target_mean": -0.054105114191770554,
+          "final_target_std": 0.991672933101654,
+          "final_pred_mean": -0.04895484447479248,
+          "final_pred_std": 1.0097450017929077
+        },
+        "elapsed_seconds": 7.077654699969571
+      },
+      "elapsed_seconds": 7.107567900035065
+    },
+    {
+      "index": 3,
+      "sample_id": "fixed_p1_003_seed45",
+      "prompt": "A chef plating handmade noodles in a warm modern kitchen, candid documentary photograph",
+      "seed": 45,
+      "objective": {
+        "state_loss": 0.5343236923217773,
+        "final_loss": 0.42826560139656067,
+        "total_loss": 0.9625892639160156,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.01865316958549987,
+        "gradient_max_abs": 0.000965118408203125,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.31.attn.to_out.0.lora_down.weight",
+          "l2": 0.008389641656855067,
+          "max_abs": 0.000759124755859375
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.017606615801129304,
+          "max_abs": 0.0009918212890625,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.0006741180550307035,
+          "state_target_std": 1.214587926864624,
+          "state_pred_mean": -0.014241915196180344,
+          "state_pred_std": 0.6665856242179871,
+          "final_target_mean": 0.0024959612637758255,
+          "final_target_std": 1.0679935216903687,
+          "final_pred_mean": -0.013813911005854607,
+          "final_pred_std": 0.8931092023849487
+        },
+        "elapsed_seconds": 7.050096299964935
+      },
+      "elapsed_seconds": 7.081752699974459
+    },
+    {
+      "index": 4,
+      "sample_id": "fixed_p1_004_seed46",
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "seed": 46,
+      "objective": {
+        "state_loss": 0.4230615496635437,
+        "final_loss": 0.32012975215911865,
+        "total_loss": 0.7431913018226624,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.0652290564082551,
+        "gradient_max_abs": 0.00194549560546875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.0.attn.to_out.0.lora_up.weight",
+          "l2": 0.018915392550931075,
+          "max_abs": 0.00147247314453125
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.06490411630471916,
+          "max_abs": 0.001983642578125,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": 0.07849138230085373,
+          "state_target_std": 1.399422287940979,
+          "state_pred_mean": 0.05785354971885681,
+          "state_pred_std": 0.9253681898117065,
+          "final_target_mean": 0.07580988109111786,
+          "final_target_std": 1.2641394138336182,
+          "final_pred_mean": 0.09746785461902618,
+          "final_pred_std": 1.318224310874939
+        },
+        "elapsed_seconds": 7.0511311999871396
+      },
+      "elapsed_seconds": 7.082510999985971
+    },
+    {
+      "index": 5,
+      "sample_id": "fixed_p1_005_seed47",
+      "prompt": "A rain-covered neon street in a dense Asian city at night, cinematic photography, reflections",
+      "seed": 47,
+      "objective": {
+        "state_loss": 0.2647812068462372,
+        "final_loss": 0.16202586889266968,
+        "total_loss": 0.42680707573890686,
+        "gradient_tensors": 64,
+        "gradient_l2": 0.024826476466721883,
+        "gradient_max_abs": 0.001190185546875,
+        "gradient_nonfinite_values": 0,
+        "gradient_finite": true,
+        "gradient_top": {
+          "parameter": "diffusion_model.transformer_blocks.30.attn.to_out.0.lora_down.weight",
+          "l2": 0.010583133527485458,
+          "max_abs": 0.001190185546875
+        },
+        "state_gradient": {
+          "tensors": 64,
+          "l2": 0.02430834277786963,
+          "max_abs": 0.0012359619140625,
+          "nonfinite_values": 0
+        },
+        "predictions": {
+          "state_target_mean": -0.03110324963927269,
+          "state_target_std": 1.1490514278411865,
+          "state_pred_mean": -0.014546460472047329,
+          "state_pred_std": 0.7452235221862793,
+          "final_target_mean": -0.030851565301418304,
+          "final_target_std": 0.986084520816803,
+          "final_pred_mean": -0.02051607519388199,
+          "final_pred_std": 1.013236165046692
+        },
+        "elapsed_seconds": 7.063843699987046
+      },
+      "elapsed_seconds": 7.097146700019948
+    }
+  ],
+  "holdout": [
+    {
+      "index": 6,
+      "sample_id": "fixed_p1_006_seed48",
+      "seed": 48,
+      "state_loss": 0.2901700437068939,
+      "final_loss": 0.17387984693050385,
+      "total_loss": 0.4640498757362366,
+      "elapsed_seconds": 7.36217239999678
+    },
+    {
+      "index": 7,
+      "sample_id": "fixed_p1_007_seed49",
+      "seed": 49,
+      "state_loss": 0.4763568341732025,
+      "final_loss": 0.28935253620147705,
+      "total_loss": 0.765709400177002,
+      "elapsed_seconds": 7.11304010002641
+    }
+  ]
+}

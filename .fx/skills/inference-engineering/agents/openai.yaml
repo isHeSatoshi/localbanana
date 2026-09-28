@@ -1,0 +1,4 @@
+interface:
+  display_name: "Inference Engineering"
+  short_description: "Design, measure, and operate model inference"
+  default_prompt: "Use $inference-engineering to diagnose and improve this model-serving workload."

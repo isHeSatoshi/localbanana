@@ -1,0 +1,34 @@
+{
+  "reference": "D:\\Project\\1secimage\\out\\benchmarks\\quality_v021_p1_r256_6_512_000\\quality_v021_p1_r256_6_512_000_00001_.png",
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition Variation marker 4.",
+  "clip_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--openai--clip-vit-base-patch32\\snapshots\\3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+  "dino_model": "%USERPROFILE%\\.cache\\huggingface\\hub\\models--facebook--dinov2-base\\snapshots\\f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+  "candidates": [
+    {
+      "label": "two_step_trained_r1_512",
+      "image": "D:\\Project\\1secimage\\out\\research\\student_eval\\two_step_trained_r1_512\\two_step_trained_r1_512_004_seed42_00001_.png",
+      "pixel_mae_rgb": 0.04963458701968193,
+      "pixel_rmse_rgb": 0.07633604854345322,
+      "pixel_max_abs_rgb": 0.9490196108818054,
+      "neighbor_gradient_mean": 0.0011096792295575142,
+      "laplacian_mean_abs": 0.01164842490106821,
+      "clip_prompt_alignment": 0.30116167664527893,
+      "clip_image_cosine_vs_reference": 0.8432934880256653,
+      "dino_image_cosine_vs_reference": 0.5215634107589722,
+      "dino_l2_vs_reference": 0.9781990051269531
+    },
+    {
+      "label": "two_step_untrained_512b",
+      "image": "D:\\Project\\1secimage\\out\\research\\student_eval\\two_step_untrained_512b\\two_step_untrained_512b_004_seed42_00001_.png",
+      "pixel_mae_rgb": 0.05046192929148674,
+      "pixel_rmse_rgb": 0.07685708999633789,
+      "pixel_max_abs_rgb": 0.9450980424880981,
+      "neighbor_gradient_mean": 0.0011144339805468917,
+      "laplacian_mean_abs": 0.011738820932805538,
+      "clip_prompt_alignment": 0.3056674897670746,
+      "clip_image_cosine_vs_reference": 0.8490785956382751,
+      "dino_image_cosine_vs_reference": 0.5183333158493042,
+      "dino_l2_vs_reference": 0.9814954996109009
+    }
+  ]
+}

@@ -1,0 +1,520 @@
+{
+  "tag": "schedcmp",
+  "size": 512,
+  "seeds": [
+    101,
+    202,
+    303
+  ],
+  "prompts": [
+    "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+    "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+    "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+    "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections"
+  ],
+  "summary": {
+    "grids": {
+      "n1": [
+        1.0
+      ],
+      "n2prescribed": [
+        1.0,
+        0.25
+      ],
+      "n2tuned": [
+        1.0,
+        0.85
+      ],
+      "n3": [
+        1.0,
+        0.75,
+        0.25
+      ],
+      "n4": [
+        1.0,
+        0.75,
+        0.5,
+        0.25
+      ]
+    },
+    "n_prompts": 4,
+    "n_seeds": 3,
+    "n_combos": 12,
+    "mean_dino_cosine": {
+      "n1": 0.199724171233053,
+      "n2prescribed": 0.44457679490248364,
+      "n2tuned": 0.6455913422008356,
+      "n3": 0.8345098743836085,
+      "n4": 0.8447602490584055
+    },
+    "median_dino_cosine": {
+      "n1": 0.08790214732289314,
+      "n2prescribed": 0.43236243724823,
+      "n2tuned": 0.781271755695343,
+      "n3": 0.8410559594631195,
+      "n4": 0.841250091791153
+    },
+    "min_dino_cosine": {
+      "n1": -0.01429859921336174,
+      "n2prescribed": 0.17196081578731537,
+      "n2tuned": 0.144499734044075,
+      "n3": 0.5912861227989197,
+      "n4": 0.6386771202087402
+    },
+    "max_dino_cosine": {
+      "n1": 0.5480095148086548,
+      "n2prescribed": 0.8198708295822144,
+      "n2tuned": 0.8972629308700562,
+      "n3": 0.9567110538482666,
+      "n4": 0.9519013166427612
+    },
+    "mean_clip_cosine": {
+      "n1": 0.6624846855799357,
+      "n2prescribed": 0.790430337190628,
+      "n2tuned": 0.8203229109446207,
+      "n3": 0.9115838458140691,
+      "n4": 0.932337482770284
+    },
+    "per_prompt_mean_dino": {
+      "0": {
+        "n1": 0.4582,
+        "n2prescribed": 0.5931,
+        "n2tuned": 0.8466,
+        "n3": 0.8681,
+        "n4": 0.8681
+      },
+      "1": {
+        "n1": 0.2874,
+        "n2prescribed": 0.7373,
+        "n2tuned": 0.8133,
+        "n3": 0.922,
+        "n4": 0.9215
+      },
+      "2": {
+        "n1": 0.0532,
+        "n2prescribed": 0.1924,
+        "n2tuned": 0.5325,
+        "n3": 0.7333,
+        "n4": 0.7386
+      },
+      "3": {
+        "n1": 0.0001,
+        "n2prescribed": 0.2555,
+        "n2tuned": 0.3901,
+        "n3": 0.8147,
+        "n4": 0.8508
+      }
+    }
+  },
+  "combos": [
+    {
+      "key": "p0_s101",
+      "prompt_index": 0,
+      "seed": 101,
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p0_s101_ref6_512_000\\schedcmp_p0_s101_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.43974369764328003,
+          "clip_cosine": 0.7316931486129761,
+          "pixel_mae": 0.03179127350449562
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.5515797138214111,
+          "clip_cosine": 0.8549154996871948,
+          "pixel_mae": 0.029973512515425682
+        },
+        "n2tuned": {
+          "dino_cosine": 0.7912153601646423,
+          "clip_cosine": 0.8987264633178711,
+          "pixel_mae": 0.01949176751077175
+        },
+        "n3": {
+          "dino_cosine": 0.9359630346298218,
+          "clip_cosine": 0.9730942845344543,
+          "pixel_mae": 0.02254060097038746
+        },
+        "n4": {
+          "dino_cosine": 0.9519013166427612,
+          "clip_cosine": 0.9846042394638062,
+          "pixel_mae": 0.02260204590857029
+        }
+      }
+    },
+    {
+      "key": "p0_s202",
+      "prompt_index": 0,
+      "seed": 202,
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p0_s202_ref6_512_000\\schedcmp_p0_s202_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.38676029443740845,
+          "clip_cosine": 0.7229745388031006,
+          "pixel_mae": 0.05618159472942352
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.6420751810073853,
+          "clip_cosine": 0.8683488965034485,
+          "pixel_mae": 0.054824188351631165
+        },
+        "n2tuned": {
+          "dino_cosine": 0.8513319492340088,
+          "clip_cosine": 0.8950274586677551,
+          "pixel_mae": 0.03687701001763344
+        },
+        "n3": {
+          "dino_cosine": 0.814271092414856,
+          "clip_cosine": 0.9318724274635315,
+          "pixel_mae": 0.04685594514012337
+        },
+        "n4": {
+          "dino_cosine": 0.8140310645103455,
+          "clip_cosine": 0.9300927519798279,
+          "pixel_mae": 0.04759696498513222
+        }
+      }
+    },
+    {
+      "key": "p0_s303",
+      "prompt_index": 0,
+      "seed": 303,
+      "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p0_s303_ref6_512_000\\schedcmp_p0_s303_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.5480095148086548,
+          "clip_cosine": 0.804072916507721,
+          "pixel_mae": 0.04854200780391693
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.5856179594993591,
+          "clip_cosine": 0.8979970812797546,
+          "pixel_mae": 0.04708858206868172
+        },
+        "n2tuned": {
+          "dino_cosine": 0.8972629308700562,
+          "clip_cosine": 0.9571921229362488,
+          "pixel_mae": 0.01953180879354477
+        },
+        "n3": {
+          "dino_cosine": 0.8539310693740845,
+          "clip_cosine": 0.9703004360198975,
+          "pixel_mae": 0.03095094859600067
+        },
+        "n4": {
+          "dino_cosine": 0.8384792804718018,
+          "clip_cosine": 0.9659909605979919,
+          "pixel_mae": 0.03167693316936493
+        }
+      }
+    },
+    {
+      "key": "p1_s101",
+      "prompt_index": 1,
+      "seed": 101,
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p1_s101_ref6_512_000\\schedcmp_p1_s101_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.47661176323890686,
+          "clip_cosine": 0.7019880414009094,
+          "pixel_mae": 0.13677270710468292
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.8198708295822144,
+          "clip_cosine": 0.9178081154823303,
+          "pixel_mae": 0.12983675301074982
+        },
+        "n2tuned": {
+          "dino_cosine": 0.8017547726631165,
+          "clip_cosine": 0.9050503373146057,
+          "pixel_mae": 0.13323523104190826
+        },
+        "n3": {
+          "dino_cosine": 0.8961647152900696,
+          "clip_cosine": 0.964996337890625,
+          "pixel_mae": 0.12163392454385757
+        },
+        "n4": {
+          "dino_cosine": 0.9112827777862549,
+          "clip_cosine": 0.9688214063644409,
+          "pixel_mae": 0.12124400585889816
+        }
+      }
+    },
+    {
+      "key": "p1_s202",
+      "prompt_index": 1,
+      "seed": 202,
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p1_s202_ref6_512_000\\schedcmp_p1_s202_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.29083600640296936,
+          "clip_cosine": 0.6399914622306824,
+          "pixel_mae": 0.12636946141719818
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.6953119039535522,
+          "clip_cosine": 0.8431538939476013,
+          "pixel_mae": 0.11522748321294785
+        },
+        "n2tuned": {
+          "dino_cosine": 0.8019551634788513,
+          "clip_cosine": 0.9067922234535217,
+          "pixel_mae": 0.09254280477762222
+        },
+        "n3": {
+          "dino_cosine": 0.9130687713623047,
+          "clip_cosine": 0.9645665884017944,
+          "pixel_mae": 0.09296059608459473
+        },
+        "n4": {
+          "dino_cosine": 0.9101406335830688,
+          "clip_cosine": 0.9697837829589844,
+          "pixel_mae": 0.09447300434112549
+        }
+      }
+    },
+    {
+      "key": "p1_s303",
+      "prompt_index": 1,
+      "seed": 303,
+      "prompt": "A red vintage bicycle leaning against a sunlit limewashed wall, realistic editorial photography",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p1_s303_ref6_512_000\\schedcmp_p1_s303_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.09469452500343323,
+          "clip_cosine": 0.6541533470153809,
+          "pixel_mae": 0.15332646667957306
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.6967319846153259,
+          "clip_cosine": 0.8613775968551636,
+          "pixel_mae": 0.14212648570537567
+        },
+        "n2tuned": {
+          "dino_cosine": 0.8360616564750671,
+          "clip_cosine": 0.8899276256561279,
+          "pixel_mae": 0.08533501625061035
+        },
+        "n3": {
+          "dino_cosine": 0.9567110538482666,
+          "clip_cosine": 0.9507822394371033,
+          "pixel_mae": 0.09226556867361069
+        },
+        "n4": {
+          "dino_cosine": 0.9429277777671814,
+          "clip_cosine": 0.9685025811195374,
+          "pixel_mae": 0.09436837583780289
+        }
+      }
+    },
+    {
+      "key": "p2_s101",
+      "prompt_index": 2,
+      "seed": 101,
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p2_s101_ref6_512_000\\schedcmp_p2_s101_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.022799590602517128,
+          "clip_cosine": 0.6293036341667175,
+          "pixel_mae": 0.07595259696245193
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.2325916588306427,
+          "clip_cosine": 0.7999964356422424,
+          "pixel_mae": 0.07265122979879379
+        },
+        "n2tuned": {
+          "dino_cosine": 0.4179854393005371,
+          "clip_cosine": 0.8267122507095337,
+          "pixel_mae": 0.05055282637476921
+        },
+        "n3": {
+          "dino_cosine": 0.7162182331085205,
+          "clip_cosine": 0.9246714115142822,
+          "pixel_mae": 0.057287562638521194
+        },
+        "n4": {
+          "dino_cosine": 0.7369945049285889,
+          "clip_cosine": 0.9587950706481934,
+          "pixel_mae": 0.057197365909814835
+        }
+      }
+    },
+    {
+      "key": "p2_s202",
+      "prompt_index": 2,
+      "seed": 202,
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p2_s202_ref6_512_000\\schedcmp_p2_s202_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.055755846202373505,
+          "clip_cosine": 0.6927580833435059,
+          "pixel_mae": 0.10142504423856735
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.17196081578731537,
+          "clip_cosine": 0.762876033782959,
+          "pixel_mae": 0.09870827198028564
+        },
+        "n2tuned": {
+          "dino_cosine": 0.40804392099380493,
+          "clip_cosine": 0.8027647137641907,
+          "pixel_mae": 0.057906609028577805
+        },
+        "n3": {
+          "dino_cosine": 0.5912861227989197,
+          "clip_cosine": 0.9266027212142944,
+          "pixel_mae": 0.07732419669628143
+        },
+        "n4": {
+          "dino_cosine": 0.6386771202087402,
+          "clip_cosine": 0.9230064153671265,
+          "pixel_mae": 0.07818207889795303
+        }
+      }
+    },
+    {
+      "key": "p2_s303",
+      "prompt_index": 2,
+      "seed": 303,
+      "prompt": "A misty mountain lake at sunrise, layered ridges, calm water, wide landscape photograph, natural colors",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p2_s303_ref6_512_000\\schedcmp_p2_s303_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.08110976964235306,
+          "clip_cosine": 0.6822635531425476,
+          "pixel_mae": 0.10628759115934372
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.17256933450698853,
+          "clip_cosine": 0.7169811129570007,
+          "pixel_mae": 0.10195193439722061
+        },
+        "n2tuned": {
+          "dino_cosine": 0.7713281512260437,
+          "clip_cosine": 0.850921630859375,
+          "pixel_mae": 0.05400068685412407
+        },
+        "n3": {
+          "dino_cosine": 0.8923633098602295,
+          "clip_cosine": 0.9164792895317078,
+          "pixel_mae": 0.0729055404663086
+        },
+        "n4": {
+          "dino_cosine": 0.840174674987793,
+          "clip_cosine": 0.920653223991394,
+          "pixel_mae": 0.07086817920207977
+        }
+      }
+    },
+    {
+      "key": "p3_s101",
+      "prompt_index": 3,
+      "seed": 101,
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p3_s101_ref6_512_000\\schedcmp_p3_s101_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": -0.01429859921336174,
+          "clip_cosine": 0.5391645431518555,
+          "pixel_mae": 0.150743767619133
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.31314516067504883,
+          "clip_cosine": 0.6298038363456726,
+          "pixel_mae": 0.131003275513649
+        },
+        "n2tuned": {
+          "dino_cosine": 0.3899466097354889,
+          "clip_cosine": 0.5577921867370605,
+          "pixel_mae": 0.11684110015630722
+        },
+        "n3": {
+          "dino_cosine": 0.8281808495521545,
+          "clip_cosine": 0.758899450302124,
+          "pixel_mae": 0.10921963304281235
+        },
+        "n4": {
+          "dino_cosine": 0.8423255085945129,
+          "clip_cosine": 0.8469364047050476,
+          "pixel_mae": 0.10715538263320923
+        }
+      }
+    },
+    {
+      "key": "p3_s202",
+      "prompt_index": 3,
+      "seed": 202,
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p3_s202_ref6_512_000\\schedcmp_p3_s202_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": 0.016550354659557343,
+          "clip_cosine": 0.568964421749115,
+          "pixel_mae": 0.11058643460273743
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.24948188662528992,
+          "clip_cosine": 0.687157392501831,
+          "pixel_mae": 0.09694021940231323
+        },
+        "n2tuned": {
+          "dino_cosine": 0.144499734044075,
+          "clip_cosine": 0.6061620712280273,
+          "pixel_mae": 0.09058782458305359
+        },
+        "n3": {
+          "dino_cosine": 0.7962285280227661,
+          "clip_cosine": 0.766944169998169,
+          "pixel_mae": 0.07657575607299805
+        },
+        "n4": {
+          "dino_cosine": 0.8286448121070862,
+          "clip_cosine": 0.8137608170509338,
+          "pixel_mae": 0.07689698785543442
+        }
+      }
+    },
+    {
+      "key": "p3_s303",
+      "prompt_index": 3,
+      "seed": 303,
+      "prompt": "A futuristic transparent mechanical wristwatch on black acrylic, detailed product macro, cyan reflections",
+      "reference": "D:\\Project\\1secimage\\out\\benchmarks\\schedcmp_p3_s303_ref6_512_000\\schedcmp_p3_s303_ref6_512_000_00001_.png",
+      "results": {
+        "n1": {
+          "dino_cosine": -0.0018827086314558983,
+          "clip_cosine": 0.5824885368347168,
+          "pixel_mae": 0.1310514360666275
+        },
+        "n2prescribed": {
+          "dino_cosine": 0.20398510992527008,
+          "clip_cosine": 0.6447481513023376,
+          "pixel_mae": 0.11675705760717392
+        },
+        "n2tuned": {
+          "dino_cosine": 0.6357104182243347,
+          "clip_cosine": 0.7468058466911316,
+          "pixel_mae": 0.08943315595388412
+        },
+        "n3": {
+          "dino_cosine": 0.8197317123413086,
+          "clip_cosine": 0.889796793460846,
+          "pixel_mae": 0.09165451675653458
+        },
+        "n4": {
+          "dino_cosine": 0.8815435171127319,
+          "clip_cosine": 0.9371021389961243,
+          "pixel_mae": 0.09236890822649002
+        }
+      }
+    }
+  ],
+  "total_elapsed_seconds": 230.50823560000026
+}

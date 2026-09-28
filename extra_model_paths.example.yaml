@@ -1,0 +1,10 @@
+# Copy this to ComfyUI/extra_model_paths.yaml and point it at wherever you put the
+# weights, or just drop them in ComfyUI/models/ and delete this file.
+#
+# See the download table in the top-level README for which files go in which folder.
+
+qwen21_local:
+  diffusion_models: D:\models\diffusion_models
+  loras: D:\models\loras
+  text_encoders: D:\models\text_encoders
+  vae: D:\models\vae

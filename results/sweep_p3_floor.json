@@ -1,0 +1,152 @@
+{
+  "tag": "p3_floor",
+  "mode": "latency",
+  "size": 512,
+  "seed": 101,
+  "prompt": "A small blue glass sphere on a dark studio background, soft rim light, product photograph, centered composition",
+  "vary_prompt": false,
+  "grids": [
+    {
+      "label": "n1",
+      "raw_sigmas": [
+        1.0
+      ],
+      "steps": 1,
+      "median_elapsed_seconds": 0.024479900000187627,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "SaveImage": 0.01750493049621582
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n1_512_001\\p3_floor_n1_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n1_512_002\\p3_floor_n1_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n1_512_003\\p3_floor_n1_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n1_512_004\\p3_floor_n1_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n1_512_005\\p3_floor_n1_512_005_00001_.png"
+      ],
+      "cached_sampler_runs": [],
+      "sampler_step_intervals": []
+    },
+    {
+      "label": "n2",
+      "raw_sigmas": [
+        1.0,
+        0.78
+      ],
+      "steps": 2,
+      "median_elapsed_seconds": 0.029312300000128744,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "SaveImage": 0.022005081176757812
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n2_512_001\\p3_floor_n2_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n2_512_002\\p3_floor_n2_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n2_512_003\\p3_floor_n2_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n2_512_004\\p3_floor_n2_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n2_512_005\\p3_floor_n2_512_005_00001_.png"
+      ],
+      "cached_sampler_runs": [],
+      "sampler_step_intervals": []
+    },
+    {
+      "label": "n3",
+      "raw_sigmas": [
+        1.0,
+        0.75,
+        0.25
+      ],
+      "steps": 3,
+      "median_elapsed_seconds": 0.029634499999701802,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "SaveImage": 0.020507097244262695
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n3_512_001\\p3_floor_n3_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n3_512_002\\p3_floor_n3_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n3_512_003\\p3_floor_n3_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n3_512_004\\p3_floor_n3_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n3_512_005\\p3_floor_n3_512_005_00001_.png"
+      ],
+      "cached_sampler_runs": [],
+      "sampler_step_intervals": []
+    },
+    {
+      "label": "n4",
+      "raw_sigmas": [
+        1.0,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "steps": 4,
+      "median_elapsed_seconds": 0.02889560000039637,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "SaveImage": 0.0214998722076416
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n4_512_001\\p3_floor_n4_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n4_512_002\\p3_floor_n4_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n4_512_003\\p3_floor_n4_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n4_512_004\\p3_floor_n4_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n4_512_005\\p3_floor_n4_512_005_00001_.png"
+      ],
+      "cached_sampler_runs": [],
+      "sampler_step_intervals": []
+    },
+    {
+      "label": "n5",
+      "raw_sigmas": [
+        1.0,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "steps": 5,
+      "median_elapsed_seconds": 0.029549699999734003,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "SaveImage": 0.022500038146972656
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n5_512_001\\p3_floor_n5_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n5_512_002\\p3_floor_n5_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n5_512_003\\p3_floor_n5_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n5_512_004\\p3_floor_n5_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n5_512_005\\p3_floor_n5_512_005_00001_.png"
+      ],
+      "cached_sampler_runs": [],
+      "sampler_step_intervals": []
+    },
+    {
+      "label": "n6",
+      "raw_sigmas": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "steps": 6,
+      "median_elapsed_seconds": 0.030916299999262264,
+      "measured_runs": 5,
+      "stage_medians_seconds": {
+        "SaveImage": 0.023498058319091797
+      },
+      "images": [
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n6_512_001\\p3_floor_n6_512_001_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n6_512_002\\p3_floor_n6_512_002_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n6_512_003\\p3_floor_n6_512_003_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n6_512_004\\p3_floor_n6_512_004_00001_.png",
+        "D:\\Project\\1secimage\\out\\benchmarks\\p3_floor_n6_512_005\\p3_floor_n6_512_005_00001_.png"
+      ],
+      "cached_sampler_runs": [],
+      "sampler_step_intervals": []
+    }
+  ],
+  "total_elapsed_seconds": 9.079534500000591
+}

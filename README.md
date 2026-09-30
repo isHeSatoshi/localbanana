@@ -99,7 +99,7 @@ Details in `COMFYUI_PATCHES.md`.
 
 `_gated_residual` in `comfy/ldm/qwen_image21/model.py` mutates the running hidden state in
 place across all 32 blocks. With checkpointing that produces silently wrong gradients around
-`1e17`. Training appears to run and the weights are destroyed.
+`1e17`. Training appears to run and the weights are destroyed. Have pushed a PR against both.
 
 `cast_bias_weight` in `comfy/ops.py` hands out views into a reusable async cast buffer, so a
 later block overwrites the storage before backward reads a saved RMSNorm weight.

@@ -17,7 +17,18 @@ models/
 *.bin
 
 # ComfyUI is a checkout with its own repository and is not vendored here.
+# Matched case-insensitively on Windows, which also covers contrib/comfyui/ below.
 ComfyUI/
+
+# Git worktree holding the ComfyUI contribution branch.
+_wt_master/
+
+# Staging directory for files mirrored to Hugging Face. Holds a copy of the
+# adapter; the mirror itself lives at huggingface.co/isHeSatoshi.
+_hf_stage/
+
+# Upstream contribution drafts for ComfyUI. These are not part of this project's code.
+contrib/
 
 # Result files from the long optimization history. Only a curated set is published.
 results/sweep_raw/

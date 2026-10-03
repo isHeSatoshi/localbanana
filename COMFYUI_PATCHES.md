@@ -1,9 +1,14 @@
 # Two ComfyUI defects that block training Qwen-Image-2.1
 
 Found while trying to distill a few-step student out of the Viggle Turbo v0.2.1 adapter.
-Both are guarded by `comfy.model_management.in_training`, so neither changes inference
-behaviour. Verified: a run on clean code and a run with both fixes produce pixel-identical
-output, MAE `0.0`.
+Both only affect the training path, so neither changes inference behaviour. Verified: a run
+on clean code and a run with both fixes produce pixel-identical output, MAE `0.0`.
+
+Upstream, `_gated_residual` has no `in_training` branch at all, so it is the only function in
+`comfy/ldm/qwen_image21/model.py` that runs its unsafe form during training. `_modulated_norm`
+and `LastLayer.forward` in the same file both branch on `comfy.model_management.in_training`.
+The fix below brings `_gated_residual` in line with that existing convention, keeping the
+original fused in-place path as the inference path.
 
 ## 1. `_gated_residual` mutates a tensor autograd still needs
 

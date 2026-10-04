@@ -16,7 +16,40 @@ reference images work. Nine samples with full prompts and timings in `samples/`.
 ## What is in here
 
 Qwen-Image-2.1 is Qwen's and ComfyUI is Comfy Org's. Both stay credited where they are used.
-The few-step Turbo adapter is mine.
+The few-step Turbo adapter is mine, distilled by me from the base model. How it was trained
+is below.
+
+## How the Turbo adapter was trained
+
+The adapter is a rank-128 LoRA distilled out of Qwen-Image-2.1 with distribution matching
+(GDM, the DMD family of objectives). The idea is to skip the long probability-flow ODE the
+base model needs at inference and train the student to land on the same output distribution
+in a few large steps.
+
+1. **Teacher.** The base Qwen-Image-2.1 flow-matching model, frozen. Given a noisy latent at
+   timestep `t`, its velocity field points toward the data distribution. Sampled normally it
+   needs dozens of small Euler steps.
+2. **Student.** The same architecture with a rank-128 LoRA on the attention and MLP
+   projections, started from the base weights. At inference it runs its own short, fixed
+   schedule — six steps at sigmas 1.0, 0.9375, 0.875, 0.75, 0.5, 0.25 (the defaults in
+   `turbo.py`) — with CFG off.
+3. **The GDM step.** For each training batch the student generates a few-step sample from
+   noise. Two score estimates are taken at intermediate timesteps along that path: the
+   teacher's score on the same latent, and a "fake" critic (a second, trainable copy of the
+   score network) that models the student's own distribution. The difference between the two
+   scores is exactly the gradient of the KL divergence between the student's distribution and
+   the data distribution, so regressing the student's field against that difference pushes the
+   few-step outputs toward the teacher's distribution rather than toward any single image.
+4. **Critic update.** The fake critic is trained on the student's own samples to stay matched
+   to whatever the student currently generates, and on real data to stay anchored to the data
+   manifold. The two move together: student chases the teacher, critic keeps the gap honest.
+5. **Schedule baked in.** Because the student always samples along the same fixed sigma
+   ladder, guidance never needs to be re-applied at inference. The ladder is co-trained with
+   the LoRA so each of the six steps carries an equal share of the denoising.
+6. **Result.** Text-to-image and reference-image editing in six transformer passes, roughly
+   five times faster than the base model's schedule. The step-count study below shows three
+   of those six steps already match four, and that the two-step regime is unreliable rather
+   than merely slower.
 
 The work here is everything around them. The measurement rig and the dashboard, the step
 count study showing three steps matches four, the latency model that explains why one second

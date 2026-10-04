@@ -36,7 +36,7 @@ DASHBOARD_OUTPUT.mkdir(parents=True, exist_ok=True)
 DIT_MODEL = "qwen_image_2.1_int8_convrot.safetensors"
 TEXT_MODEL = "qwen3vl_8b_int8_convrot.safetensors"
 VAE_MODEL = "qwen_image_2.1_vae_bf16.safetensors"
-TURBO_LORA = "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors"
+TURBO_LORA = "Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128.safetensors"
 DEFAULT_PROMPT = (
     "A premium futuristic AI image-generation emblem, centered composition, "
     "luminous cyan and violet light, sharp details, cinematic studio lighting, "
@@ -893,7 +893,7 @@ The final clean stock-loader run measured **1.891 s** for the v0.2.1 r128 five-s
 2. ComfyUI loads the INT8 ConvRot DiT, INT8 ConvRot Qwen3-VL encoder, and BF16 VAE.
 3. `TextEncodeQwenImage21` encodes the positive prompt once by default. When the dashboard's negative-prompt checkbox is enabled, it also encodes the negative prompt.
 4. `QwenImage21Cache` stores the reusable prefix K/V state on the GPU at default precision. Its prompt-keyed slots keep positive and negative conditioning separate. This is lossless cache storage, not lossless whole-pipeline inference.
-5. The runtime Turbo LoRA is the current Viggle v0.2.1 r128 adapter. The quality profile uses the prescribed six-step sigma schedule; the fast profile uses the publisher-supported five-step compromise schedule.
+5. The runtime Turbo LoRA is the current v0.2.1 r128 adapter. The quality profile uses the prescribed six-step sigma schedule; the fast profile uses the publisher-supported five-step compromise schedule.
 6. With negative prompting disabled, `BasicGuider` runs at CFG 1 with no duplicate pass. Enabling it switches to `CFGGuider` and the selected CFG scale; Turbo negative prompting is experimental and slower.
 7. Comfy Kitchen dispatches the INT8 linear work to its native CUDA `int8_linear` path under `torch 2.14.0+cu130`.
 8. Three asynchronous offload streams overlap weight transfer with computation on this 16GB card.
@@ -905,7 +905,7 @@ The base Qwen-Image-2.1 checkpoint is the source model. The local run does not r
 
 - **Base/default path:** the original Qwen-Image-2.1 checkpoint, usually loaded at higher precision and sampled with a 25–50 step Euler schedule. The official template starts at 25 steps; the README's reference pipeline uses 40 steps.
 - **Dashboard base reference:** the same INT8 DiT, INT8 Qwen3-VL encoder, GPU cache, CFG-1 conditioning, and runtime, with Turbo removed and ordinary `KSampler` set to 40 steps. This isolates the Turbo adapter and schedule effect, but is not a BF16 full-fidelity comparison.
-- **Local accepted path:** INT8 ConvRot model weights, runtime Viggle v0.2.1 r128 Turbo LoRA, prescribed six-step quality schedule or five-step fast schedule, positive-only CFG-1 by default, optional CFG-based negative prompting, GPU lossless prefix cache, native Comfy Kitchen CUDA kernels, three async offload streams, and a 1.0 GiB reserve.
+- **Local accepted path:** INT8 ConvRot model weights, runtime v0.2.1 r128 Turbo LoRA, prescribed six-step quality schedule or five-step fast schedule, positive-only CFG-1 by default, optional CFG-based negative prompting, GPU lossless prefix cache, native Comfy Kitchen CUDA kernels, three async offload streams, and a 1.0 GiB reserve.
 - **What remains upstream:** the 7B model, Qwen3-VL encoder, VAE, Turbo LoRA/distillation, prefix-cache architecture, Comfy Kitchen kernels, and ComfyUI offload machinery.
 - **What is local:** the graph-level `encode_negative` option, the exact artifact combination, the RTX 4060 Ti stream tuning, the quality gate, and the reproducible benchmark record.
 

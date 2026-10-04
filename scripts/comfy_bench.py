@@ -215,7 +215,7 @@ def build_prompt(
         if args.lora_bypass:
             lora_class = "LoraLoaderBypassModelOnly"
         elif args.unmerged_lora:
-            lora_class = "ViggleTurboLora"
+            lora_class = "TurboLora"
             lora_inputs = {
                 "model": ["1", 0],
                 "lora_name": args.lora,
@@ -491,10 +491,10 @@ def parse_args():
     parser.add_argument("--text-encoder", default="qwen3vl_8b_int8_convrot.safetensors")
     parser.add_argument("--text-encoder-device", choices=["default", "cpu"], default="default")
     parser.add_argument("--vae", default="qwen_image_2.1_vae_bf16.safetensors")
-    parser.add_argument("--lora", default="Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors")
+    parser.add_argument("--lora", default="Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128.safetensors")
     parser.add_argument("--no-lora", action="store_true", help="Disable the model adapter for a counterfactual run.")
     parser.add_argument("--lora-bypass", action="store_true", help="Apply the model LoRA through the quantized-safe bypass path.")
-    parser.add_argument("--unmerged-lora", action="store_true", help="Apply the Viggle Turbo adapter as an unmerged runtime branch.")
+    parser.add_argument("--unmerged-lora", action="store_true", help="Apply the Turbo adapter as an unmerged runtime branch.")
     parser.add_argument("--strength", type=float, default=1.0)
     parser.add_argument("--cache-device", choices=["auto", "gpu", "cpu", "off", "bypass"], default="auto")
     parser.add_argument("--cache-dtype", choices=["default", "int8", "int4"], default="default")

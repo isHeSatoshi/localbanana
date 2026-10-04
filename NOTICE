@@ -27,14 +27,12 @@ ComfyUI
   not vendored in this repository; the patches are meant to be applied to your own checkout.
   https://github.com/comfyanonymous/ComfyUI
 
-Viggle Qwen-Image-2.1 Turbo adapter
-  Copyright (c) Viggle. Distributed under the Qwen RESEARCH LICENSE AGREEMENT.
-  Third-party artifact, not covered by this repository's GPL-3.0 grant.
-  Upstream: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
+Qwen-Image-2.1 Turbo adapter
+  Copyright (c) isHeSatoshi. Distributed under the Qwen RESEARCH LICENSE AGREEMENT.
+  Part of this project's contributions, not covered by this repository's GPL-3.0 grant.
+  Hosted at: https://huggingface.co/isHeSatoshi/Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128
 
-  This repository's README links to a mirror of one file from that repository,
-  hosted at https://huggingface.co/isHeSatoshi/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128
-  to pin the exact adapter the published measurements were taken on. The mirror is an
-  unmodified byte-for-byte copy. Viggle remains the author of the weights; the mirror
-  grants no additional rights and does not alter the upstream license terms.
+  The adapter is pinned so the exact artifact the published measurements were taken on
+  stays available. It is distributed under the Qwen RESEARCH LICENSE AGREEMENT, which
+  grants no additional rights and does not alter Qwen's license terms.
   SHA256: BAFB91D0047DF3F9B8A5A850B0C967F051164314D8AAD778DFA34D9C24EC345B

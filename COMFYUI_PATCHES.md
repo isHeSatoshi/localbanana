@@ -1,6 +1,6 @@
 # Two ComfyUI defects that block training Qwen-Image-2.1
 
-Found while trying to distill a few-step student out of the Viggle Turbo v0.2.1 adapter.
+Found while trying to distill a few-step student out of the Turbo v0.2.1 adapter.
 Both only affect the training path, so neither changes inference behaviour. Verified: a run
 on clean code and a run with both fixes produce pixel-identical output, MAE `0.0`.
 

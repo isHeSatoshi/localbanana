@@ -15,8 +15,8 @@ reference images work. Nine samples with full prompts and timings in `samples/`.
 
 ## What is in here
 
-The weights are not mine. Qwen-Image-2.1 is Qwen's, the few-step Turbo adapter is Viggle's,
-and ComfyUI is Comfy Org's. All three stay credited where they are used.
+Qwen-Image-2.1 is Qwen's and ComfyUI is Comfy Org's. Both stay credited where they are used.
+The few-step Turbo adapter is mine.
 
 The work here is everything around them. The measurement rig and the dashboard, the step
 count study showing three steps matches four, the latency model that explains why one second
@@ -35,22 +35,22 @@ Weights come from ungated Hugging Face repos, about 16.7 GB. No token needed.
 | Comfy-Org/Qwen-Image-2.1 | `diffusion_models/qwen_image_2.1_int8_convrot.safetensors` | `diffusion_models/` |
 | Comfy-Org/Qwen-Image-2.1 | `text_encoders/qwen3vl_8b_int8_convrot.safetensors` | `text_encoders/` |
 | Comfy-Org/Qwen-Image-2.1 | `vae/qwen_image_2.1_vae_bf16.safetensors` | `vae/` |
-| isHeSatoshi (mirror of Viggle) | `Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors` | `loras/` |
-| isHeSatoshi (mirror of Viggle) | `viggle_turbo.py` | `ComfyUI/custom_nodes/` |
+| isHeSatoshi | `Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128.safetensors` | `loras/` |
+| isHeSatoshi | `turbo.py` | `ComfyUI/custom_nodes/` |
 
-The last two rows are an unmodified mirror of
-[Viggle/Qwen-Image-2.1-viggle-turbo](https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo),
-hosted here so the exact adapter every number below was measured against stays pinned. SHA256
-is in that repo's model card. Prefer upstream if you want the current release instead.
+The Turbo adapter is
+[isHeSatoshi/Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128](https://huggingface.co/isHeSatoshi/Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128),
+hosted so the exact adapter every number below was measured against stays pinned. SHA256
+is in that repo's model card.
 
 ```bash
 huggingface-cli download Comfy-Org/Qwen-Image-2.1 \
   --include "diffusion_models/qwen_image_2.1_int8_convrot.safetensors" \
            "text_encoders/qwen3vl_8b_int8_convrot.safetensors" \
            "vae/qwen_image_2.1_vae_bf16.safetensors"
-huggingface-cli download isHeSatoshi/Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128 \
-  --include "Qwen-Image-2.1-viggle-turbo-v0.2.1-6step-lora-r128.safetensors" \
-           "viggle_turbo.py"
+huggingface-cli download isHeSatoshi/Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128 \
+  --include "Qwen-Image-2.1-turbo-v0.2.1-6step-lora-r128.safetensors" \
+           "turbo.py"
 ```
 
 Point ComfyUI at your weights with `extra_model_paths.example.yaml`, then:
@@ -132,5 +132,5 @@ The code here is GPL-3.0, because it contains ComfyUI-derived patches.
 
 The weights are not. Qwen-Image-2.1 is under the Qwen RESEARCH LICENSE AGREEMENT, which is
 non-commercial only, research or evaluation only. Commercial use needs a separate license
-from Qwen. The Viggle adapter is under the same agreement. The mirror linked above is an
-unmodified copy carrying the same terms and grants nothing extra. See `NOTICE`.
+from Qwen. The Turbo adapter is mine and is distributed under the same agreement, which
+grants nothing extra. See `NOTICE`.

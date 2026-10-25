@@ -19,6 +19,25 @@ Qwen-Image-2.1 is Qwen's and ComfyUI is Comfy Org's. Both stay credited where th
 The few-step Turbo adapter is mine, distilled by me from the base model. How it was trained
 is below.
 
+## Built with Droid
+
+The distillation and the measurement rig around it were done in Droid.
+
+The part worth explaining is the measurement loop rather than the training itself. Every run of
+the adapter had to answer the same question before it was worth anything: does the few-step
+student actually land on the same output distribution as the teacher? That means generating with
+both, measuring the gap, and being able to say which change closed it and by how much. Droid ran
+that loop, wrote the measurement scripts in `scripts/`, and kept the run records in `results/` so
+a later run could be compared against an earlier one instead of against a feeling.
+
+The same work produced the ComfyUI patches in `COMFYUI_PATCHES.md`. The in-place gated residual
+update broke the training path for five different models, and each of those five fixes is now a
+pull request against ComfyUI.
+
+The dashboard that shows the runs, `dashboard.py`, came out of the same loop.
+
+Everything runs locally. No account, no API key, nothing uploaded.
+
 ## How the Turbo adapter was trained
 
 The adapter is a rank-128 LoRA distilled out of Qwen-Image-2.1 with distribution matching
